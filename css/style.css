@@ -137,11 +137,17 @@ body {
 	padding-right: 20px;
 	margin-bottom: 20px;
 }
+#container .mix {
+	text-align: left;
+	display: none;
+}
 /********************************************Page Portofolio-Project********************************************/
 #portofolio-project-slideshow {
 	width: 600px;
 	height: 333px;
 }
+
+
 .carousel-indicators {
 	bottom: 0;
 }
@@ -149,11 +155,131 @@ body {
 .carousel-control.left {
 	height: 333px;
 }
-
 .carousel-control.right {
 	height: 333px;
 }
+left;
+	display: none;
+}
 
+/********************************************page home****************************************************/
 
+#content-1
+{
+	background: #dfdfdf;
+	width: 100%;
+	height: 600px;
+	top: 0px;
+	margin-bottom: 0px;
+	
+}
 
+.title-1
+{
+	text-align: center;
+	color: #181818;
+	font-family: 'calibri';
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
 
+.step 
+{
+	margin-top: 50px;
+	margin-left: 70px;
+}
+
+#content-2
+{
+	background: #5f76ba;
+	width: 1350px;
+	height: 600px;
+}
+
+.des-step
+{
+	text-align: center;
+}
+
+.contact
+{
+	width: 100%;
+	top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+
+}
+
+.comment-form
+{
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	margin-top: 180px;
+	padding: 10px
+	
+}
+
+.inputName
+{
+	position: absolute;
+	margin: 0px 0px;
+	width: 350px;
+    padding: 5px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9d9e9e;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+.inputEmail
+{
+	position: absolute;
+	margin: 50px 0px;
+	width: 350px;
+    padding: 5px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9d9e9e;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+.comment
+{
+	margin: 100px 0px;
+	width: 350px;
+	height: 100px;
+    padding: 5px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9d9e9e;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+.submit
+{
+	margin-top: -90px;
+	background: #d4d4d4;
+	border-radius: 3px;
+	width: 100px;
+	padding: 2px 2px;
+	font-family: 'times new roman';
+}
