@@ -1,0 +1,107 @@
+
+.borderkiri{
+  border-left: 1px solid lightsteelblue;
+}
+.btnsupport{
+  margin-top: 10px;
+}
+.isipetisi2{
+  height: 200px;
+}
+.isipetisi1{
+  margin-top: 20px;
+}
+.isipetisi{
+  margin-top: 30px;
+}
+.userpetisi1{
+  margin-top: 20px;
+}
+.userpetisi{
+  border-right: 1px solid lightsteelblue;
+}
+
+.bio-user{
+  color: white;
+  margin-top: 15px;
+}
+.bg-user{
+    background-image: url("bgusers.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.picuser{
+  width: 150px;
+  height: 150px;
+  border: 1px solid #fff; 
+  margin-top: 15px;
+}
+.bg-lavender{
+  background-color:lavender;
+}
+.bg-dark{
+  background-color:#000;
+
+  color:#fff;
+  padding: 20px;
+  height: 90%;
+}
+.bg-grey{
+  background-color: grey;
+  color: white;
+  opacity: 0.4;
+}
+.navbar-natural{
+  background-color: #ffffff;
+  border-bottom: 1px solid #c01911;
+}
+.logo{
+background-color: #c01911 ;
+color: #fff;
+border: none;
+}
+.logo:hover{
+  background-color: #ec2c22;
+  color: #fff;
+  border: none;
+}
+.valueweb{
+  margin-top: 65px;
+  margin-bottom: 10px;
+  min-height: 80%;
+}
+.dont-cros{
+margin-right: 20px;
+}
+.box-default{
+	border-bottom: 1px solid #D8D8D8;
+	border-top:1px solid #D8D8D8;
+	height: 65px;
+	padding-top: 5px;
+}
+.control-slide{
+  width: 0px;
+  color:#01A9DB;
+  margin:13px;
+}
+.slide-def{
+  height:287px;
+}
+.margin-bottom-10{
+  margin-bottom: 10px;
+} 
+.right-fixed{
+
+position: fixed;
+left: 60%;
+top:140px;
+z-index: 8;
+
+}
+.big-faticon{
+  font-size: 50px;
+}
+.margin-half{
+  margin-top: 20%;
+}

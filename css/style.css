@@ -1,0 +1,159 @@
+body {
+	/*background-color: #F1F1F1;*/
+	background-color: #fff;
+}
+
+.navbar-induk{
+	background-color: #fff;
+	border-radius: 0px;
+	height:50px;
+	width:1366px;
+}
+
+.navbar-logo {
+	margin-top: -12px;
+	height: 40px;
+}
+
+.navbar-header {
+	background-color: transparent;
+}
+
+.navbar-induk .navbar-nav > li > a {
+	color: #de5a51;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+.navbar-induk .navbar-nav > li > button{
+	color: #FFFFFF;
+}
+.navbar-induk .navbar-nav > li > .btn-primary {
+	border-radius: 4px;
+	height: 35px;
+}
+
+.input-group {
+	margin-top: 10px;
+}
+
+.navbar-search-box-icon {
+	height: 15px;
+}
+
+.navbar-induk .navbar-nav > li > a:hover {
+	background-color: transparent;
+	border-bottom: 3px solid #de5a51;
+}
+
+.navbar-induk .navbar-nav > li > a:focus {
+	background-color: transparent;
+	border-bottom: 3px solid #de5a51;
+}
+
+
+
+
+/********************************************Nav********************************************/
+.modal-header {
+    padding:18px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #F05521;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+     height: 75px;
+ }
+
+
+.modal-content {
+	width:60%;
+	left:80px;
+	top:60px;
+	border-radius: 6px;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+
+/********************************************Page Manage-Project********************************************/
+.thumbnail {
+	height: 350px;
+	background-color: #FFFFFF;
+	
+}
+/********************************************Page Upload-Upload********************************************/
+.upload-upload-text {
+	border-radius: 0px;
+}
+
+.container-fluid > a {
+	color: ;
+	font-size: 20px;
+	text-decoration: none;
+	top: 65px;
+	text-align: center;
+}
+
+.container-fluid > a:focus {
+	border-bottom: 3px solid black;
+}
+
+.save {
+	background: url(images/upload-btn-save.png);
+	width: 206.226px;
+	height: 44.532px;
+}
+.save:hover {
+	background: transparent url(images/upload-btn-saveHover.png);
+}
+.btn-publish {
+	background: url(images/upload-btn-publish.png);
+	width: 206.226px;
+	height: 44.532px;
+}
+.btn-publish:hover {
+	background: transparent url(images/upload-btn-publishHover.png);
+}
+/********************************************Page Portofolio********************************************/
+.a-categories {
+	margin-top: 35px;
+	margin-right: 20px;
+}
+
+.content-portofolio > p {
+	color: #8e9197;
+	margin-top: -12px;
+	font-size: 12px;
+}
+
+.content-portofolio {
+	display: inline-block;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+/********************************************Page Portofolio-Project********************************************/
+#portofolio-project-slideshow {
+	width: 600px;
+	height: 333px;
+}
+.carousel-indicators {
+	bottom: 0;
+}
+
+.carousel-control.left {
+	height: 333px;
+}
+
+.carousel-control.right {
+	height: 333px;
+}
+
+
+
+
