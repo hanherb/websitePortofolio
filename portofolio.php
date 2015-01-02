@@ -47,37 +47,37 @@
 		<div id="container" class="col-md-10" style="left: 65px; height:100%;">
 						
 				<div class="mix category-1 content-portofolio">
-					<img src="images/1.png">
+					<img src="images/3.png">
 					<h4><strong>Portofolio Preview</strong></h4>
 					<p>by <font color="#de5a51">Suparno</font></p>
 				</div>
 
 				<div class="mix category-2 content-portofolio">
-					<img src="images/1.png">
+					<img src="images/3-b.png">
 					<h4><strong>Portofolio Preview</strong></h4>
 					<p>by <font color="#de5a51">Suparno</font></p>
 				</div>
 
 				<div class="mix category-1 content-portofolio">
-					<img src="images/1.png">
+					<img src="images/3.png">
 					<h4><strong>Portofolio Preview</strong></h4>
 					<p>by <font color="#de5a51">Suparno</font></p>
 				</div>
 
 					<div class="mix category-1 content-portofolio">
-					<img src="images/1.png">
+					<img src="images/3-b.png">
 					<h4><strong>Portofolio Preview</strong></h4>
 					<p>by <font color="#de5a51">Suparno</font></p>
 				</div>
 
 				<div class="mix category-2 content-portofolio">
-					<img src="images/1.png">
+					<img src="images/3.png">
 					<h4><strong>Portofolio Preview</strong></h4>
 					<p>by <font color="#de5a51">Suparno</font></p>
 				</div>
 
 				<div class="mix category-2 content-portofolio">
-					<img src="images/1.png">
+					<img src="images/3-b.png">
 					<h4><strong>Portofolio Preview</strong></h4>
 					<p>by <font color="#de5a51">Suparno</font></p>
 				</div>
