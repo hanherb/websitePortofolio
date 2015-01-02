@@ -1,0 +1,104 @@
+body {
+	/*background-color: #F1F1F1;*/
+	background-color: #fff;
+}
+
+.navbar-induk{
+	background-color: #F05521;
+	border-radius: 0px;
+	height:50px;
+	width:1366px;
+}
+
+.navbar-logo {
+	margin-top: -12px;
+	height: 40px;
+}
+
+.navbar-header {
+	background-color: transparent;
+}
+
+.navbar-induk .navbar-nav > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-induk .navbar-nav > li > button{
+	color: #FFFFFF;
+}
+.navbar-induk .navbar-nav > li > .btn-primary {
+	border-radius: 4px;
+	height: 35px;
+}
+
+.input-group {
+	margin-top: 10px;
+}
+
+.navbar-search-box-icon {
+	height: 15px;
+}
+
+.navbar-induk .navbar-nav > li > a:hover,
+.navbar-induk .navbar-nav > li > a:focus {
+    background: #d65c14;
+}
+
+
+
+
+/********************************************Page Upload********************************************/
+.btn-upload { 
+	height: 40px;
+	width: 150px;
+}
+
+/********************************************Page Manage-Project********************************************/
+.thumbnail {
+	height: 350px;
+	background-color: #FFFFFF;
+	
+}
+/********************************************Page Upload-Upload********************************************/
+.upload-upload-text {
+	border-radius: 0px;
+}
+
+.container-fluid > a {
+	color: ;
+	font-size: 20px;
+	text-decoration: none;
+	top: 65px;
+	text-align: center;
+}
+
+.container-fluid > a:focus {
+	border-bottom: 3px solid black;
+}
+/********************************************Page Portofolio********************************************/
+.a-categories {
+	margin-top: 35px;
+	margin-right: 20px;
+}
+
+.content-portofolio > p {
+	color: #8e9197;
+	margin-top: -12px;
+	font-size: 12px;
+}
+
+.content-portofolio {
+	display: inline-block;
+	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+#container .mix {
+	text-align: left;
+	display: none;
+}
+
+
+
+
+
