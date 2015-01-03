@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<?php include 'source.php' ?>
-		<script type="text/javascript">
-		</script>
+
 	</head>
 
 	<body>
