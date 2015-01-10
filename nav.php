@@ -14,24 +14,20 @@
 
 
           <li>
-          <?php
-          $_SESSION=NULL;
+            <?php
+              $_SESSION=NULL;
+              
+              if($_SESSION==NULL){
+                $user="Sign In";
+              }
 
-           if($_SESSION==NULL){
-
-             $user="Sign In";
-            }
-            else{
-
-
-              $user=$_SESSION['username'];
-            }
-
-
+              else{
+                $user=$_SESSION['username'];
+              }
             ?>
-
-          <a class="navbar-font" data-toggle="modal" data-target="#myModal"><?php echo $user ?></a></li> 
-       </ul>
+            <a class="navbar-font" data-toggle="modal" data-target="#myModal"><?php echo $user ?></a>
+          </li> 
+        </ul>
 
        <!--Popup-->
        <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
