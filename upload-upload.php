@@ -12,24 +12,20 @@
 	label {
 		color: #67696e;
 	}
-	a {
-		color: #de5a51;
-		font-family: "Times New Roman", Times, serif;
-	}
 	</style>
 </head>
 
 <body>
 	<?php include "nav.php"; ?> 
-	<div class="container-fluid col-md-offset-2 col-md-9" style="border-bottom: 3px solid #de5a51; background-color:#F2F1ED; height:100px; margin-top:50px;">
-		<a class="focus-link col-md-2" href="#">Upload</a> 	
-		<a class="focus-link col-md-3"href="#">Manage Project</a>		
+	<div class="container-fluid upload-upload col-md-offset-2 col-md-9" style="border-bottom: 3px solid #de5a51; background-color:#F2F1ED; height:100px; margin-top:50px;">
+		<a class="focus-link col-md-2" href="uplaod-uplaod.php">Upload</a> 	
+		<a class="focus-link col-md-3"href="manage-project.php">Manage Project</a>		
 	</div>
 
 	
 	<div class="content col-md-12">
 		<!-- Row Kiri -->
-		 <div class="upload-upload-form col-md-offset-2 col-md-5" style="background-color:#fff; margin-top:15px; padding-top:25px;">
+		 <div class="upload-upload-form col-md-offset-2 col-md-6" style="background-color:#fff; margin-top:15px; padding-top:25px;">
 		  	<div class="col-md-offset-1 col-md-10">
 		    	<form method="post" action="" enctype="multipart/form-data">
 	    		<label>Project Title</label>
@@ -64,21 +60,13 @@
 
 		<!-- Row Kanan -->
 		<div class="col-md-3" style="left: 55px; margin-top:15px; padding-top:25px;">
-			<button type="button" class="save"></button>
-			<input type="button" class="btn-publish"/>
-
-		   	<!--<ul class="actions with-icons">
-				<li><a href="http://brianhoffdesign.com/" class="visit" target="_blank"><span class="icon double"><span>↪</span></span> <span class="text"><em>Visit</em>brianhoffdesign.com</span></a></li>
-				<li class="pagination"><a href="/websites/5225-danish" class="prev"><span class="double icon"><span>◃</span></span> <span class="text"><em>Previous</em>Danish™</span></a></li>
-				<li class="pagination"><a href="/websites/5230-medium" class="next"><span class="double icon"><span>▹</span></span> <span class="text"><em>Next</em>Medium</span></a></li>
-			</ul>
-			<ul class="credit-list with-icons">
-				<li><a href="/claims/new?website_id=5228" class="claim"><span class="icon check"><span>✓</span></span> <span class="text">Add a credit</span></a></li>
-			</ul>
-			<ul class="collection-actions with-icons">
-				<li><a href="/users/sign_up" class="collection-add" rel="tipsy" original-title="Sign up or sign in to add sites to collections."><span class="icon add"><span>+</span></span> <span class="text">Add to a collection</span></a></li>
-			</ul>-->
-
+			<div class="col-md-offset-1 col-md-2 btn-save">
+				<a href="#">Save</a>
+			</div>
+			<div class="col-md-offset-1 col-md-2 btn-publish">
+				<a href="#">Publish</a>
+			</div>
+			
 
 	</div>
 	 

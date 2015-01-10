@@ -2,7 +2,7 @@
  <nav class="navbar navbar-induk navbar-fixed-top">
     <div class="container-fluid col-md-offset-1 col-md-10">
      <div class="navbar-header">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.php">
       <img class="navbar-logo" src="images/logo3.png">
        <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
@@ -14,24 +14,20 @@
 
 
           <li>
-          <?php
-          $_SESSION=NULL;
+            <?php
+              $_SESSION=NULL;
+              
+              if($_SESSION==NULL){
+                $user="Sign In";
+              }
 
-           if($_SESSION==NULL){
-
-             $user="Sign In";
-            }
-            else{
-
-
-              $user=$_SESSION['username'];
-            }
-
-
+              else{
+                $user=$_SESSION['username'];
+              }
             ?>
-
-          <a class="navbar-font" data-toggle="modal" data-target="#myModal"><?php echo $user ?></a></li> 
-       </ul>
+            <a class="navbar-font" data-toggle="modal" data-target="#myModal"><?php echo $user ?></a>
+          </li> 
+        </ul>
 
        <!--Popup-->
        <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
@@ -52,7 +48,7 @@
                   <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In"> <br><br><br>
                 </div>
                  <div class="modal-footer">
-                    <label>Not a member yet? <a style="color:#F05521;"href="#">Sign Up</a></label>
+                    <label>Not a member yet? <a style="color:#F05521;"href="signup.php">Sign Up</a></label>
                  </div>
 
           </div>
