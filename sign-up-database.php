@@ -11,11 +11,38 @@
     	$nim = $_POST['signup_nim'];
     	$year = $_POST['signup_year'];
 
+        $username_check = mysql_query("SELECT * FROM user WHERE username = '" . $username . "'")
+        or die("Couldn't query the user-database.");
+        $num = mysql_num_rows($username_check);
+
+        $email_check = mysql_query("SELECT * FROM user WHERE email = '" . $email . "'")
+        or die("Couldn't query the user-database.");
+        $num2 = mysql_num_rows($email_check);
+
     	if($password != $confirm_password) {
     		echo '<script type="text/javascript">
     				alert("Confirm password berbeda dengan password");
     			  </script>';
     	}
+
+        else if($num == 1) {
+            echo '<script type="text/javascript">
+                    alert("Username sudah terdaftar");
+                  </script>';
+        }
+
+        else if($num2 == 1) {
+            echo '<script type="text/javascript">
+                    alert("Email sudah terdaftar");
+                  </script>';
+        }
+
+        else if((strlen($username) == 0) || (strlen($email) == 0) || (strlen($password) == 0) || (strlen($username) == 0) || 
+            (strlen($username) == 0)) {
+            echo '<script type="text/javascript">
+                    alert("Tidak boleh ada field yang kosong");
+                  </script>';
+        }
 
     	else {
     		$sql = "INSERT INTO `portofolio`.`user` (`id_number`, `nim`, `username`, `email`, `password`, `fullname`, `year`)
