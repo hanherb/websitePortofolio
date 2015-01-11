@@ -13,7 +13,7 @@
   <?php include "nav.php"; ?>
 
     <div class="container-fluid manage-project col-md-offset-2 col-md-9" style="border-bottom: 3px solid #de5a51; background-color:#F2F1ED; height:100px; margin-top:50px;">
-    <a class="focus-link col-md-2" href="uplaod-uplaod.php">Upload</a>  
+    <a class="focus-link col-md-2" href="upload-upload.php">Upload</a>  
     <a class="focus-link col-md-3"href="manage-project.php">Manage Project</a>    
   </div>
     
