@@ -2,11 +2,13 @@
 	mysql_connect("localhost","root","") or die(mysql_error());
     mysql_select_db("portofolio") or die(mysql_error());
 
+    session_start();
 	if(isset($_POST['submit'])) {
 		$title = strip_tags(trim($_POST['title']));
 		$description = strip_tags(trim($_POST['description']));
 		$category = strip_tags(trim($_POST['category']));
 		$link = strip_tags(trim($_POST['link']));
+		$username = strip_tags(trim($_SESSION['nama']));
 
 		$target_dir = "images/uploads/";
 		$target_file = $target_dir . basename($_FILES["fileUpload"]["name"]);
@@ -55,7 +57,7 @@
 		$preview = $target_dir . basename($_FILES["fileUpload"]["name"]);
 
 		$sql = "INSERT INTO `portofolio`.`upload` (`id_upload`, `title`, `description`, `created_by`, `category`, `link`, `preview`)
-		VALUES ('', '$title', '$description', '', '$category', '$link', '$preview')";
+		VALUES ('', '$title', '$description', '$username', '$category', '$link', '$preview')";
 		mysql_query($sql);
 	}
 ?>
