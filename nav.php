@@ -52,7 +52,7 @@
                   <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In"> <br><br><br>
                 </div>
                  <div class="modal-footer">
-                    <label>Not a member yet? <a style="color:#F05521;"href="#">Sign Up</a></label>
+                    <label>Not a member yet? <a style="color:#F05521;"href="sign-up.php">Sign Up</a></label>
                  </div>
 
           </div>
