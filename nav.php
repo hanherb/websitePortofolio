@@ -73,6 +73,18 @@
                   <label class="col-md-offset-1">Password</label> <br>
                   <input name="password" type="password" class="input-user col-md-offset-1 col-md-10" placeholder="Kata Sandi" id="password">
                   <br><br><br>
+<<<<<<< HEAD
+                  <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In"> <br><br><br>
+                </div>
+                 <div class="modal-footer">
+<<<<<<< HEAD
+                    <label>Not a member yet? <a style="color:#F05521;"href="sign-up.php">Sign Up</a></label>
+=======
+                    <label>Not a member yet? <a style="color:#F05521;"href="signup.php">Sign Up</a></label>
+>>>>>>> 7f46e5b89a9a487259047dec6e24b65cd274534a
+                 </div>
+
+=======
                   <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In" name="sign_in"> <br><br><br>
                 </form>
               </div>
@@ -80,6 +92,7 @@
                 <label>Not a member yet? <a style="color:#F05521;"href="signup.php">Sign Up</a></label>
               </div>
             </div>
+>>>>>>> baf803c2fb93fa0743d9aa5db598644325f1b265
           </div>
         </div>
         <!--End Popup-->
