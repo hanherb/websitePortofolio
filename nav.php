@@ -35,6 +35,13 @@
           <li>
             <?php
               if(session_status() != PHP_SESSION_NONE) {
+                echo '<img src= "images/empty-picture.png" id="image-avatar" style="width: 40px; height: 30px; margin-top: 10px;"/>';
+              }
+            ?>
+          </li>
+          <li>
+            <?php
+              if(session_status() != PHP_SESSION_NONE) {
                 $user=$_SESSION['nama'];
               }
               if (session_status() == PHP_SESSION_NONE) {
@@ -50,9 +57,7 @@
                         </ul>
                       </a>';
               }
-            ?>
-            
-            
+            ?> 
           </li> 
         </ul>
 
