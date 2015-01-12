@@ -4,7 +4,7 @@
   <?php include 'source.php' ?>
   <style>
     body {
-    background-color: #F2F1ED;
+    background-color: #EAEAEA;
   }
   </style>
 </head>
@@ -12,12 +12,15 @@
 <body>
   <?php include "nav.php"; ?>
 
-    <div class="container-fluid manage-project col-md-offset-2 col-md-9" style="border-bottom: 3px solid #de5a51; background-color:#F2F1ED; height:100px; margin-top:50px;">
-    <a class="focus-link col-md-2" href="upload-upload.php">Upload</a>  
-    <a class="focus-link col-md-3"href="manage-project.php">Manage Project</a>    
+  <div class="container-fluid col-md-offset-2 col-md-9" style="margin-top: 100px;" >
+    <ul class=" upload-upload ">
+      <li><a class="col-md-2 text-center" href="upload-upload.php">Upload</a></li>
+      <li><a class="col-md-3 text-center manage-activated"href="manage-project.php">Manage Project</a><li>   
+    </ul>
   </div>
     
     <div class="col-md-offset-2 manage-project-content col-md-10">
+      <!-- <hr> -->
       
       <div class="col-md-3 project-thumbnail" >
         <div class="thumbnail col-md-12">
@@ -25,7 +28,10 @@
           <div class="caption">
             <h4><strong>Project's Name</strong></h4>
             <p>Category</p>
-            <p><a href="#" class="btn btn-default" role="button">Edit</a> <a href="#" class="btn btn-danger" role="button">Delete</a></p>
+            <p>
+            <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            <a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
+            </p>
           </div>
         </div>
       </div>
@@ -38,7 +44,8 @@
           <div class="caption">
             <h4><strong>Project's Name</strong></h4>
             <p>Category</p>
-            <p><a href="#" class="btn btn-default" role="button">Edit</a> <a href="#" class="btn btn-danger" role="button">Delete</a></p>
+            <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            <a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
           </div>
         </div>
       </div>
@@ -49,7 +56,8 @@
           <div class="caption">
             <h4><strong>Project's Name</strong></h4>
             <p>Category</p>
-            <p><a href="#" class="btn btn-default" role="button">Edit</a> <a href="#" class="btn btn-danger" role="button">Delete</a></p>
+            <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            <a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
           </div>
         </div>
       </div>
@@ -60,13 +68,14 @@
           <div class="caption">
             <h4><strong>Project's Name</strong></h4>
             <p>Category</p>
-            <p><a href="#" class="btn btn-default" role="button">Edit</a> <a href="#" class="btn btn-danger" role="button">Delete</a></p>
+            <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            <a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
           </div>
         </div>
       </div>
 
   </div>
-  </div>
+
 
       
 

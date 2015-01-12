@@ -4,7 +4,7 @@
 	<?php include 'source.php' ?>
 	<style>
 	body{
-		background-color: #F2F1ED;
+		background-color: #EAEAEA;
 	}
 
 	h2, h3, p {
@@ -23,12 +23,15 @@
 <body>
 	<?php include "nav.php"; ?>
 
-	<div class="col-md-offset-1 container-fluid" style="margin-top:80px;">
-		<hr class="col-md-7">
+	<div class="col-md-offset-1 container-fluid portofolio-project" style="margin-top:80px;">
+
 		<!--Row Kiri-->
-		<div class=" col-md-8">
-			<h1><strong>Petisi Paramadina</strong></h1>
-			<p>Website | Mobile Apps</p>
+		<div class="portofolio-project-title-link col-md-12">
+			<h1>Petisi Paramadina</h1>
+			<p><a href="portofolio.php">PORTOFOLIO</a> . <a href="#">PROGRAMMING</a></p>
+		</div>
+		<div class="col-md-7 portofolio-project-slideshow-template"> 
+
 
 			<!-- Slide Show -->
 			<div id="portofolio-project-slideshow" class="carousel slide" data-ride="carousel">
@@ -73,11 +76,17 @@
 		</div>
 
 		<!--Row Kanan-->
-		<div class="col-md-4" style="top: 80px; left:-80px;">
-			<h2>Description</h2>
+		<div class="col-md-4 portofolio-project-right">
+			<hr>
+			<h4>Description</h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-			<h2>Team</h2>
+			<hr>
+			<h4>Link</h4>
+			<p><a href="#">http://himti.paramadina.ac.id</a></p>
+			<hr>
+			<h4>Team</h4>
 			<p>Suprapto(2012), Suparman(2013), Sumarni(2014)</p>
+			<hr>
 
 		</div>
 

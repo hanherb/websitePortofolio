@@ -2,11 +2,15 @@
 	mysql_connect("localhost","root","") or die(mysql_error());
     mysql_select_db("portofolio") or die(mysql_error());
 
+    
+
 	if(isset($_POST['submit'])) {
+		// session_start();
 		$title = strip_tags(trim($_POST['title']));
 		$description = strip_tags(trim($_POST['description']));
 		$category = strip_tags(trim($_POST['category']));
 		$link = strip_tags(trim($_POST['link']));
+		$username = strip_tags(trim($_SESSION['nama']));
 
 		$target_dir = "images/uploads/";
 		$target_file = $target_dir . basename($_FILES["fileUpload"]["name"]);
@@ -25,7 +29,11 @@
 		}
 		// Check if file already exists
 		if (file_exists($target_file)) {
-		    echo "Sorry, file already exists.";
+
+		echo "<script type='text/javascript'> 
+        alert('Sorry, file already exists.');
+        </script>";
+
 		    $uploadOk = 0;
 		}
 		// Check file size
@@ -35,9 +43,12 @@
 		    $uploadOk = 0;
 		}*/
 		// Allow certain file formats
+
 		if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 		&& $imageFileType != "gif" ) {
-		    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+		    echo "<script type='text/javascript'> 
+			alert('Sorry, only JPG, JPEG, PNG & GIF files are allowed.');
+			</script>";
 		    $uploadOk = 0;
 		}
 		// Check if $uploadOk is set to 0 by an error
@@ -55,7 +66,7 @@
 		$preview = $target_dir . basename($_FILES["fileUpload"]["name"]);
 
 		$sql = "INSERT INTO `portofolio`.`upload` (`id_upload`, `title`, `description`, `created_by`, `category`, `link`, `preview`)
-		VALUES ('', '$title', '$description', '', '$category', '$link', '$preview')";
+		VALUES ('', '$title', '$description', '$username', '$category', '$link', '$preview')";
 		mysql_query($sql);
 	}
 ?>

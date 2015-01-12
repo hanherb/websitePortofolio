@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 02, 2015 at 12:33 PM
+-- Generation Time: Jan 11, 2015 at 01:26 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -34,7 +34,14 @@ CREATE TABLE IF NOT EXISTS `upload` (
   `category` varchar(20) NOT NULL,
   `link` text NOT NULL,
   `preview` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `upload`
+--
+
+INSERT INTO `upload` (`id_upload`, `title`, `description`, `created_by`, `category`, `link`, `preview`) VALUES
+(3, 'asd', '', '', 'programming', '', 'images/uploads/ex.jpg');
 
 -- --------------------------------------------------------
 
@@ -43,20 +50,22 @@ CREATE TABLE IF NOT EXISTS `upload` (
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
-  `id_number` varchar(20) NOT NULL,
+`id_number` int(11) NOT NULL,
+  `nim` varchar(20) NOT NULL,
   `username` varchar(20) NOT NULL,
   `email` varchar(20) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `password` varchar(100) NOT NULL,
   `fullname` varchar(50) NOT NULL,
   `year` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_number`, `username`, `email`, `password`, `fullname`, `year`) VALUES
-('113103012', 'hanherb', 'dyo.pyon@gmail.com', '90807060', 'Hanindyo Herbowo', 2013);
+INSERT INTO `user` (`id_number`, `nim`, `username`, `email`, `password`, `fullname`, `year`) VALUES
+(1, '113103012', 'hanherb', 'dyo.pyon@gmail.com', 'b51aa9e176fb9b3fa34ea2b46449212e', 'Hanindyo Herbowo', 2013),
+(4, '111333', 'nunu', 'nunu@yahoo.com', 'c8448be50b73f4aef91a851566763d2e', 'nunu nini nono', 2012);
 
 --
 -- Indexes for dumped tables
@@ -82,7 +91,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `upload`
 --
 ALTER TABLE `upload`
-MODIFY `id_upload` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id_upload` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+MODIFY `id_number` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

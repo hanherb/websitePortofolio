@@ -38,15 +38,17 @@
                 $user=$_SESSION['nama'];
               }
               if (session_status() == PHP_SESSION_NONE) {
-                echo '<a class="navbar-font" data-toggle="modal" data-target="#myModal" id="nav1">Sign in</a>';
+                echo '<a class="navbar-font" data-toggle="modal" data-target="#myModal" id="nav1">Sign In</a>';
               }
               else {
-                echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown">' . $user . '
+                echo '<ul class="nav-right-username">
+                <li><img src= "images/avatar.png" id="image-avatar"/></li>
+                <li><a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </li></ul>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><a role="menuitem" tabindex="-1" href="#">My Profile</a></li>
-                          <li><a role="menuitem" tabindex="-1" href="#">Edit Profile</a></li>
+                          <li><p><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
+                          <li><p><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
                           <li class="divider"></li>
-                          <li><a role="menuitem" tabindex="-1" href="signout.php" name="logout">Sign Out</a></li>
+                          <li><p><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></p></li>
                         </ul>
                       </a>';
               }
@@ -62,9 +64,9 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <img class="navbar-logo col-md-offset-2" src="images/logo2.png">
+                <img class="navbar-logo col-md-offset-2" src="images/logo2.png"style="margin-top:2px;">
               </div>
-              <div class="modal-body">
+              <div class="modal-body" style="margin-top: -15px;">
                 <form method="post">
                   <h2 class="col-md-offset-4">Sign In</h2><br>
                   <label class="col-md-offset-1">Username</label> <br>
@@ -76,7 +78,7 @@
                   <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In" name="sign_in"> <br><br><br>
                 </form>
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer" style="margin-top: -15px;">
                 <label>Not a member yet? <a style="color:#F05521;"href="signup.php">Sign Up</a></label>
               </div>
             </div>

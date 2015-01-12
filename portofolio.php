@@ -4,7 +4,7 @@
 	<?php include 'source.php' ?>
 	<style>
 	body{
-		background-color: #F2F1ED;
+		background-color: #EAEAEA;
 	}
 
 	a {
@@ -12,7 +12,7 @@
 	}
 	a:hover,
 	a:focus {
-		color:#de5a51;
+		color: #F05521;
 		text-decoration: none;
 		font-family: 'Oswald', sans-serif;
 	}
