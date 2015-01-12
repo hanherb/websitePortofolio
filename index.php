@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php include 'source.php' ?>
+		<?php include 'source.php'; ?>
 
 	</head>
 
