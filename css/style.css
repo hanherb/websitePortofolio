@@ -81,49 +81,125 @@ body {
 }
 
 
+/********************************************Page signUp********************************************/
+.signup-page {
+	background-color: #fff;
+	margin-top: 80px;
+}
+
+.signup-page legend {
+	color: #67696e;
+}
+
+.signup-page label {
+		color: #67696e;
+	}
+
+.form-content-signup button {
+	background-color: #de5a51;
+	color: #fff;
+}
+
+
+
 /********************************************Page Manage-Project********************************************/
+.manage-project-content {
+	top: 35px;
+}
 .thumbnail {
 	height: 350px;
 	background-color: #FFFFFF;
 	
+}
+
+.project-thumbnail {
+	width: 250px;
 }
 /********************************************Page Upload-Upload********************************************/
 .upload-upload-text {
 	border-radius: 0px;
 }
 
-.container-fluid > a {
-	color: ;
+.upload-upload > a,
+.manage-project > a {
+	color: #de5a51;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 20px;
 	text-decoration: none;
 	top: 65px;
 	text-align: center;
 }
 
+/*hr.test {
+	margin-top : -100px;
+	border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 50px; 
+}*/
+
 .container-fluid > a:focus {
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid #de5a51;
 }
 
-.save {
-	background: url(images/upload-btn-save.png);
+.btn-save {
+    border-style: solid;
+    border-color: #de5a51;
 	width: 206.226px;
 	height: 44.532px;
 }
-.save:hover {
-	background: transparent url(images/upload-btn-saveHover.png);
+
+.btn-save > a {
+	text-decoration: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 22px; 
+	color: #de5a51;
+	margin-left: 35%;
+	margin-top: 25%;
 }
+
 .btn-publish {
-	background: url(images/upload-btn-publish.png);
+    border-style: solid;
+    border-color: #de5a51;
 	width: 206.226px;
 	height: 44.532px;
+	top: 15%;
 }
+
+.btn-publish > a {
+	margin-top: 15px;
+	font-family: "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-size: 22px; 
+	color: #de5a51;
+	margin-left: 31%;
+}
+
+.btn-save:hover {
+    border-color: #20D070;
+    color: #20D070;
+}
+
 .btn-publish:hover {
-	background: transparent url(images/upload-btn-publishHover.png);
+	border-color: #08B0F4;
+	color: #08B0F4;
 }
+
 /********************************************Page Portofolio********************************************/
 .a-categories {
 	margin-top: 35px;
 	margin-right: 20px;
+}
+
+.portofolio-img-template {
+	width: 293px;
+	height: 193px;
+	background-color: white;
+	margin-bottom: 2%;
+}
+
+.portofolio-img-template > img {
+	width: 263px;
+	height: 163px;
+	display: block;
+
 }
 
 .content-portofolio > p {
@@ -157,9 +233,6 @@ body {
 }
 .carousel-control.right {
 	height: 333px;
-}
-left;
-	display: none;
 }
 
 /********************************************page home****************************************************/

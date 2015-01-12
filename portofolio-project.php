@@ -24,7 +24,7 @@
 	<?php include "nav.php"; ?>
 
 	<div class="col-md-offset-1 container-fluid" style="margin-top:80px;">
-		<hr class="col-md-10">
+		<hr class="col-md-7">
 		<!--Row Kiri-->
 		<div class=" col-md-8">
 			<h1><strong>Petisi Paramadina</strong></h1>
