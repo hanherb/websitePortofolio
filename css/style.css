@@ -1,6 +1,7 @@
 body {
 	/*background-color: #F1F1F1;*/
 	background-color: #fff;
+	margin: 0;
 }
 
 .navbar-induk{
@@ -56,15 +57,15 @@ body {
 	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
 }
 
-.nav-right-username {
+.navbar-font{
 	display: inline;
 	list-style-type: none;
 }
 
-.nav-right-username li {
+.navbar-font li {
 	display: inline;
 }
-.nav-right-username li a {
+.navbar-font li a {
 	color: #F05521;
 }
 
@@ -367,7 +368,7 @@ body {
 #content-2
 {
 	background: #5f76ba;
-	width: 1350px;
+	width: 1349px;
 	height: 600px;
 }
 
@@ -464,11 +465,38 @@ body {
 .page-footer {
 	background-color: #2A3744; 
 	height: auto; 
-	width: 1366px;
+	width: 100%;
+}
+.page-footer_header {
+	margin-left : 30px;
+	margin-top: 10px;
 }
 
-.page-footer_heading p {
+.page-footer_header img {
+	width: 15%
+}
+
+.page-footer_header span {
+	color: #8e8e8e;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+.page-footer_header hr {
+    border-width: 1px;
+	border-color: #505961; 
+	width: 1245px;
+	margin-right: 30px;
+
+}
+
+.page-footer_heading,
+.page-footer_heading2 {
+	margin-left : 30px;
+	margin-right: 30px;
+	margin-top: 10px;
 	color: #fff;
+	margin-bottom: 30px;
 }
 
 .page-footer_heading img {
@@ -479,29 +507,44 @@ body {
 	display: inline-block;
 }
 
-/*.facebook {
- /*margin-bottom: 10px;*/
- display:block;
- width: 32px;
-	height: 32px;
- background:url('images/facebook.png') center top no-repeat;
+.page-footer_heading2 a {
+	color: #6d8299;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.6em;
+	display: block;
 }
 
-.facebook:hover {
-   background-image: url('images/facebook.png');
-}*/
+.page-footer_heading2 a:hover {
+	color: #a9b5c3;
+	text-decoration: none;
+}
 
-.page-footer-bottom {
-	background-color: #212A34;
+
+
+.page-footer-bottom  {
+	background-color: #212A34;s
 	height: 100px;
-}
-
-.page-footer-bottom p {
+	width: 100%;
 	color: #fff;
 	font-family: Roboto, Source Sans Pro,Verdana, Geneva, sans-serif;
 	font-weight: normal;
+	height: 65px;
 }
 
-.page-footer_right-logo {
-	width : 8%;
+.page-footer-bottom p { 
+	position:absolute;
+	top: 30%;
+	color: #556678;
+	margin-left: 15px;
+	margin-left: 30px;
+}
+
+.page-footer-bottom img {
+	width : 5%;
+	/*position:absolute;*/
+	float: right;
+	display: inline;
+	top: 25%;
+	margin-right: 30px;	
 }

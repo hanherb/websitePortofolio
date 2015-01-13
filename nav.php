@@ -41,20 +41,15 @@
                 echo '<a class="navbar-font" data-toggle="modal" data-target="#myModal" id="nav1">Sign In</a>';
               }
               else {
-                echo '<ul class="nav-right-username">
-                <li><img src= "images/avatar.png" id="image-avatar"/></li>
-                <li><a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </li></ul>
+                echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                           <li><p><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
                           <li><p><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
                           <li class="divider"></li>
-                          <li><p><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></p></li>
-                        </ul>
-                      </a>';
+                          <li><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+                        </ul>';
               }
-            ?>
-            
-            
+            ?> 
           </li> 
         </ul>
 

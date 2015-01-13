@@ -88,20 +88,9 @@
 		<div id="content-2">
 			
 		</div>
-		<!--
-		<div class="contact col-md-12">
-			<img src="images/home-3.jpg" class="col-md-12">
-			<form class="comment-form col-md-12">
-				<div class="col-md-offset-3 col-md-3 col-md-offset-6">
-					<input class="inputName" placeholder="Your Name">
-					<input class="inputEmail" placeholder="Your Email">
-					<textarea class="comment" placeholder="Comment"></textarea>
-					<input type="submit" class="submit col-md-12">
-				</div>
-				
-			</form>
-		</div>
-	-->
+	
+	 <?php include "footer.php"; ?> 
+
 	</body>
 
 </html>
