@@ -34,66 +34,36 @@
 					<img src="images/categories22.png" style="top:20px; margin-right=45px; padding-bottom:25px; z-index:-1;"class="col-md-offset-4 col-md-8">
 					<div class="a-categories">
 						<a class="filter" href="#" data-filter="all">All</a><br>
-						<a class="filter" href="#" data-filter=".category-1">Programming</a><br>
-						<a class="filter" href="#" data-filter=".category-2">Game</a><br>	
-						<a class="filter" href="#" data-filter=".category-3">Mobile Apps</a><br>	
-						<a class="filter" href="#" data-filter=".category-4">Website</a><br>
-						<a class="filter" href="#" data-filter=".category-5">Other</a>
+						<a class="filter" href="#" data-filter=".programming">Programming</a><br>
+						<a class="filter" href="#" data-filter=".game">Game</a><br>	
+						<a class="filter" href="#" data-filter=".mobile">Mobile Apps</a><br>	
+						<a class="filter" href="#" data-filter=".website">Website</a><br>
+						<a class="filter" href="#" data-filter=".other">Other</a>
 					</div>
 				</div>
 			</div>
 		
 		<!--Row Kanan-->
 		<div id="container" class="col-md-10" style="left: 65px; height:100%;">
-						
-				<div class="mix category-1 content-portofolio">
-					<div class="col-md-3 portofolio-img-template">
-						<a href="portofolio-project.php"><img src="images/3-c.png"></a>
-					</div>
-					<h4><strong>Portofolio Preview</strong></h4>
-					<p>by <font color="#de5a51">Suparno</font></p>
-				</div>
+			<?php
+				mysql_connect("localhost","root","") or die(mysql_error());
+   				mysql_select_db("portofolio") or die(mysql_error());
 
-				<div class="mix category-2 content-portofolio">
-					<div class="col-md-3 portofolio-img-template">
-						<a href="portofolio-project.php"><img src="images/3-d.png"></a>
-					</div>
-					<h4><strong>Portofolio Preview</strong></h4>
-					<p>by <font color="#de5a51">Suparno</font></p>
-				</div>
-
-				<div class="mix category-1 content-portofolio">
-					<div class="col-md-3 portofolio-img-template">
-						<a href="portofolio-project.php"><img src="images/3-c.png"></a>
-					</div>
-					<h4><strong>Portofolio Preview</strong></h4>
-					<p>by <font color="#de5a51">Suparno</font></p>
-				</div>
-
-					<div class="mix category-1 content-portofolio">
-					<div class="col-md-3 portofolio-img-template">
-						<a href="portofolio-project.php"><img src="images/3-d.png"></a>
-					</div>
-					<h4><strong>Portofolio Preview</strong></h4>
-					<p>by <font color="#de5a51">Suparno</font></p>
-				</div>
-
-				<div class="mix category-2 content-portofolio">
-					<div class="col-md-3 portofolio-img-template">
-						<a href="portofolio-project.php"><img src="images/3-c.png"></a>
-					</div>
-					<h4><strong>Portofolio Preview</strong></h4>
-					<p>by <font color="#de5a51">Suparno</font></p>
-				</div>
-
-				<div class="mix category-2 content-portofolio">
-					<div class="col-md-3 portofolio-img-template">
-						<a href="portofolio-project.php"><img src="images/3-d.png"></a>
-					</div>
-					<h4><strong>Portofolio Preview</strong></h4>
-					<p>by <font color="#de5a51">Suparno</font></p>
-				</div>
-		
+				$sql = "SELECT * FROM upload";
+				$result = mysql_query($sql);
+				if($result === FALSE) { 
+				    die(mysql_error());
+				}
+				while ($row = mysql_fetch_array($result)) {
+					echo '<div class="mix '. $row["category"] .' content-portofolio">
+						<div class="col-md-3 portofolio-img-template">
+							<a href="portofolio-project.php"><img src="'. $row["preview"] .'" id="imagePreview"></a>
+						</div>
+						<h4><strong>'. $row["title"] .'</strong></h4>
+						<p>by <font color="#de5a51">'. $row["created_by"] .'</font></p>
+					  </div>';
+				}	
+			?>
 		</div>
 
 	</div>

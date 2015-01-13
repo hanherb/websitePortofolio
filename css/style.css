@@ -271,6 +271,12 @@ body {
 	text-align: left;
 	display: none;
 }
+
+#imagePreview {
+	margin-top: 12px;
+	height: 168px;
+	width: 257px;
+}
 /********************************************Page Portofolio-Project********************************************/
 .portofolio-project-slideshow-template{
 	border-radius: 3px; 

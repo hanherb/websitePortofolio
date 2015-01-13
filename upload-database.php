@@ -15,20 +15,19 @@
 		$uploadOk = 1;
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-		// Check if user doesn't want to use preview
-
 		if((strlen($title) == 0) || (strlen($description) == 0) || (strlen($link) == 0)) {
 			echo '<script type="text/javascript">
                     alert("Tidak boleh ada field yang kosong");
                   </script>';
 		}
 
+		// Check if user doesn't want to use preview
 		else {
 			if(!$_FILES['fileUpload']["name"]) {
 				echo "<script type='text/javascript'> 
 			    		alert('Portofolio di upload tanpa preview.');
 			    	  </script>";
-			   	$preview = '';
+			   	$preview = "images/3-c.png";
 			}
 
 			else {
