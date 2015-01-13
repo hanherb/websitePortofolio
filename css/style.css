@@ -235,6 +235,12 @@ body {
 	height: 333px;
 }
 
+#imagePreview {
+	margin-top: 12px;
+	height: 168px;
+	width: 257px;
+}
+
 /********************************************page home****************************************************/
 
 #content-1
