@@ -1,6 +1,5 @@
 body {
-	/*background-color: #F1F1F1;*/
-	background-color: #fff;
+	background-color: #EAEAEA;
 	margin: 0;
 	padding: 0;
 }
@@ -181,7 +180,85 @@ body {
 	margin-top: 20px;
 }
 
+/********************************************Page My Profile********************************************/
+.myprofile-page {
+	background-color: #fff;
+	box-shadow: 0px 1px 3px #888;
+	padding: 0px 0px 70px 0px;
+}
 
+.myprofile-heading img {
+	width: 100%;
+}
+
+.myprofile-heading h2 {
+	margin-top: 5%;
+}
+
+.myprofile-heading a {
+	float: right;
+	margin-top: -4%;
+	margin-right: 3%;
+}
+
+.myprofile-avatar {
+	margin-top: 2%;
+	margin-left: 5%;
+	width: 115px;
+	height: 115px;
+	border: 3px solid #fff;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px #888;
+	z-index: 1;
+	position: relative;
+}
+.myprofile-avatar img {
+	width: 102px;
+	height: 102px;
+	margin-top: 4%;
+	margin-left: -13%;
+	z-index: 2;
+	position: relative;
+}
+
+.myprofile-about {
+	margin-top: -3%;
+	background-color: #F2F2F2;
+	height: 60px;
+}
+
+.myprofile-about  p {
+	color: #888;
+	font-size: 13px;
+	font-weight: normal;
+	margin-top: 1%;
+	margin-left: 16%;
+	padding: 0;
+	margin-bottom: -1%;
+}
+
+.myprofile-portofolio-content{
+	margin-left: 5%;
+}
+
+.myprofile-img-template {
+	margin-top: 4%;
+	margin-right: 4%;
+	width: 210px;
+	height: 230px; 
+	background-color: #fff;
+	border: 3px solid #fff;
+	box-shadow: 0px 1px 3px #888;
+}
+
+.myprofile-img-template img {
+	margin-top: -2%; 	
+	margin-left: -11%;
+}
+
+.myprofile-img-template p {
+	margin-top: -4%;
+}
 
 /********************************************Page Manage-Project********************************************/
 .manage-project-content {
@@ -297,7 +374,7 @@ body {
 	padding-right: 20px;
 	margin-bottom: 20px;
 }
-#container .mix {
+#container mix {
 	text-align: left;
 	display: none;
 }
@@ -504,6 +581,7 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	margin-top: 10%;
 }
 .page-footer_header {
 	margin-left : 30px;
