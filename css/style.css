@@ -291,46 +291,17 @@ body {
 	border-radius: 0px;
 }
 
-.upload-upload{
-	display: block
-}
-
-.upload-upload li {
-	display: block;
-}
-
-.upload-upload li a {
-	display: block;
-	color: #505961;
-	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
-	font-size: 23px;
-	text-decoration: none;
-}
-
-.upload-upload li a:hover {
-	background-color: #fff;
-}
-
-.upload-activated {
-	background-color: #fff;
-}
-
-.manage-activated {
-	background-color: #fff;
-}
-
 .upload-upload-form-outline {
-	top: 20px;
-    border-style: dashed;
+/*    border-style: dashed;
     border-width: 3px;
-    border-color: #505961;
+    border-color: #505961;*/
     width: 880px;
     padding-top: 15px;
-    background-color: #c4c4c4;
+    /*background-color: #c4c4c4;*/
 }
 .upload-upload-form{
 	top: -20px;
-	box-shadow: 3px 3px 4px #888888;
+	box-shadow: 0px 1px 3px #888;
 }
 .upload-upload-content hr {
 	padding-top: 3px;
