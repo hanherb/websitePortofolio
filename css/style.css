@@ -130,6 +130,15 @@ body {
 	padding-bottom: 0;
 }
 
+.admin-page td a {
+	float: left;
+	color: white;
+}
+
+.admin-page tr:hover a {
+	color: gray;
+}
+
 .admin-page h2, a {
 	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
 }

@@ -31,7 +31,9 @@
       <div class="myprofile-heading ">
         <img src="images/home-3.jpg"> <!-- cover  -->
         <div class="myprofile-avatar col-md-2">
-          <img src=<?php echo '"'.$avatar.'"' ?>>
+          <a href=<?php echo '"'.$avatar.'"' ?> target="_blank">
+            <img src=<?php echo '"'.$avatar.'"' ?>>
+          </a>
         </div>
         <h2 class="col-xs-offset-2"><?php echo $username.' <small>('.$fullname.')</small>' ?></h2>
         <?php
