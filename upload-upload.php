@@ -26,7 +26,7 @@
 	</div>
 
 	
-	<div class="upload-upload-content col-md-12" style="height: 800px;">
+	<div class="upload-upload-content col-md-12" style="height: 900px;">
 		<!-- <hr> -->
 		<!-- Row Kiri -->
 		<div class="upload-upload-form-outline col-md-offset-2 col-md-9">
@@ -52,9 +52,16 @@
 			      		<input type="text" name="link" class="form-control upload-upload-text" rows="3" placeholder="Put your project's link here"></input>
 
 			      		<label style="padding-top:35px;">Upload Photo Preview</label>
-			      		<div class="upload-photo-box" style="background-color:#fff; padding-top:25px; border:1px solid #ccc; height:100px;">
+			      		<div class="upload-photo-box" style="background-color:#fff; padding-top:25px; border:1px solid #ccc; height:100%;">
 			      			<p class="text-center">Choose a file to upload</p>
+			      			<label class="col-md-offset-4" style="margin-left:37%;">Preview 1</label>
 			      			<input type="file" name="fileUpload" class="fileUpload col-md-offset-5" style="margin-left:37%;">
+			      			<br>
+			      			<label class="col-md-offset-4" style="margin-left:37%;">Preview 2</label>
+			      			<input type="file" name="fileUpload2" class="fileUpload col-md-offset-5" style="margin-left:37%;">
+			      			<br>
+			      			<label class="col-md-offset-4" style="margin-left:37%;">Preview 3</label>
+			      			<input type="file" name="fileUpload3" class="fileUpload col-md-offset-5" style="margin-left:37%;">
 			      			<br>
 			      		</div>
 			      		<br>
