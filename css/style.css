@@ -158,7 +158,6 @@ body {
 	margin-top: 55px;
 }
 .upload-avatar-template {
-	margin-top: -5%;
 	margin-left: 14%;
 	background-color: #fff;
 	width: 115px;
@@ -173,8 +172,8 @@ body {
 }
 
 .fileUpload-avatar {
-	margin-top: 30%;
 	color: #a09f9f;
+	margin-top: 2%;
 }
 
 .editprofile-button button {

@@ -3,7 +3,6 @@
 <head>
 	<?php 
 		include 'source.php';
-		include 'upload-database.php';
 	 ?>
 	<style>
 	body{
@@ -15,27 +14,46 @@
 <body>
 	<?php 
 		include "nav.php";
-		include "sign-up-database.php";
+		include "edit-profile-database.php";
 	?> 
 <div class="container-fluid col-md-12 editprofile-page">
 	<h2 class="text-center">Edit Profile</h2>
 	<hr class="col-md-offset-1 col-md-10"> 
 
+	<?php
+		include 'connection.php';
+		$sql = "SELECT * FROM user WHERE username = '".$_SESSION['nama']."'";
+		$result = mysql_query($sql);
+		if($result === FALSE) { 
+		    die(mysql_error());
+		}
+
+		while ($row = mysql_fetch_array($result)) {
+			$nim = $row['nim'];
+			$username = $row['username'];
+			$email = $row['email'];
+			$password = ($row['password']);
+			$fullname = $row['fullname'];
+			$year = $row['year'];
+		}
+	?>
+
 	<!-- Column - Left  -->
-	<div class="col-md-offset-1 col-md-6 column-left">
-		<div class="form-content-editprofile text-center">
-			<form class="form-horizontal" method="post">
+	<form class="form-horizontal" method="post" enctype="multipart/form-data">
+		<div class="col-md-offset-1 col-md-6 column-left">
+			<div class="form-content-editprofile text-center">
 		  		<div class="form-group">
 		    		<label class="col-md-offset-1 col-sm-3col-md-offset-1 col-sm-3 control-label text-right">Username</label>
 		    		<div class="col-sm-6">
-		     			<input type="text" class="form-control" name="signup_username" placeholder="Username">
+		     			<input type="text" class="form-control" name="signup_username" placeholder="Username" disabled 
+		     			value=<?php echo '"'.$username.'"' ?>>
 		    		</div>
 		  		</div>
 
 		  		<div class="form-group">
 		    		<label class="col-md-offset-1 col-sm-3 control-label text-right">Email</label>
 		    		<div class="col-sm-6">
-		     			<input type="email" class="form-control" name="signup_email" placeholder="Email">
+		     			<input type="email" class="form-control" name="signup_email" placeholder="Email" value=<?php echo '"'.$email.'"' ?>>
 		    		</div>
 		  		</div>
 
@@ -56,48 +74,47 @@
 		  		<div class="form-group">
 		    		<label class="col-md-offset-1 col-sm-3 control-label text-right">Fullname</label>
 		    		<div class="col-sm-6">
-		     			<input type="text" class="form-control" name="signup_fullname" placeholder="Fullname">
+		     			<input type="text" class="form-control" name="signup_fullname" placeholder="Fullname" value=<?php echo '"'.$fullname.'"' ?>>
 		    		</div>
 		  		</div>
 		  
 		    	<div class="form-group">
 		    		<label class="col-md-offset-1 col-sm-3 control-label text-right">Student ID Number</label>
 		    		<div class="col-sm-6">
-		     			<input type="text" class="form-control" name="signup_nim" placeholder="Student ID Number">
+		     			<input type="text" class="form-control" name="signup_nim" placeholder="Student ID Number" value=<?php echo '"'.$nim.'"' ?>>
 		    		</div>
 		  		</div>
 
 		  		<div class="form-group">
 		    		<label class="col-md-offset-1 col-sm-3 control-label text-right">Year</label>
 		    		<div class="col-sm-2">
-		     			<select class="form-control" name="signup_year" placeholder="Year"2@>
-		     				<option value="2011" selected="selected">2011</option>
-		     				<option value="2012">2012</option>
-		     				<option value="2013">2013</option>
-		     				<option value="2014">2014</option>
+		     			<select class="form-control" name="signup_year" placeholder="Year">
+		     				<option value="2011" <?php if ($year == "2011") {echo 'selected="selected"';}?>>2011</option>
+		     				<option value="2012" <?php if ($year == "2012") {echo 'selected="selected"';}?>>2012</option>
+		     				<option value="2013" <?php if ($year == "2013") {echo 'selected="selected"';}?>>2013</option>
+		     				<option value="2014" <?php if ($year == "2014") {echo 'selected="selected"';}?>>2014</option>
 		     			</select>
 		    		</div>
 	  			</div>
-
-	  		</form>
-		</div>
-	</div>
-
-
-	<!-- Column-Right -->
- 	<div class="col-md-offset0 col-md-4 column-right">
- 		<div class="form-group upload-avatar">
-		    <label class="col-sm-5 control-label text-right">Profile Picture</label>
-		    <input type="file" name="fileUpload" class="fileUpload-avatar col-md-offset-6">
-		    <div class="upload-avatar-template">
-				<img src="images/avatar-upload.png">
 			</div>
 		</div>
-	</div> 	
+
+
+		<!-- Column-Right -->
+	 	<div class="col-md-offset0 col-md-4 column-right">
+	 		<div class="form-group upload-avatar">
+			    <label class="col-sm-5 control-label text-right">Profile Picture</label>
+			    <input type="file" id="avatarUpload" name="avatarUpload" class="fileUpload-avatar col-md-offset-6">
+			    <div class="upload-avatar-template">
+					<img src="images/avatar-upload.png" id="avatarPreview">
+				</div>
+			</div>
+		</div> 	
  	
- 		<div class="form-group editprofile-button">
-	      	<br><button type="submit" class="btn col-md-offset-3 col-md-6" name=""> Save Information </button>
-	  	</div>
+		<div class="form-group editprofile-button">
+      		<br><button type="submit" class="btn col-md-offset-3 col-md-6" name="submit_edit"> Save Information </button>
+  		</div>
+  	</form>
 
  	<hr class="col-md-offset-1 col-md-10"> 
 

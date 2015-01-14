@@ -69,7 +69,7 @@
                   <br><br><br>
                   <label class="col-md-offset-1">Password</label> <br>
                   <input name="password" type="password" class="input-user col-md-offset-1 col-md-10" placeholder="Kata Sandi" id="password">
-                  <br><br><br
+                  <br><br><br>
                   <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In" name="sign_in"> <br><br><br>
                 </form>
               </div>

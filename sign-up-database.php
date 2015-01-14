@@ -37,8 +37,8 @@
                   </script>';
         }
 
-        else if((strlen($username) == 0) || (strlen($email) == 0) || (strlen($password) == 0) || (strlen($username) == 0) || 
-            (strlen($username) == 0)) {
+        else if((strlen($username) == 0) || (strlen($email) == 0) || ($password == "d41d8cd98f00b204e9800998ecf8427e") || (strlen($fullname) == 0) || 
+            (strlen($nim) == 0)) {
             echo '<script type="text/javascript">
                     alert("Tidak boleh ada field yang kosong");
                   </script>';
