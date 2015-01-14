@@ -34,17 +34,28 @@
          while ($row = mysql_fetch_array($result)) { 
            echo '<div class="col-md-3 project-thumbnail" >
             <div class="thumbnail col-md-12">
-              <img data-src="holder.js/100%x200" alt="100%x200" src="'.$row["preview"].'" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+              <a href="portofolio-project.php?id='.$row["created_by"].'-'.preg_replace("/\s+/", "_", $row["title"]).'">
+                <img data-src="holder.js/100%x200" alt="100%x200" src="'.$row["preview"].'" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+              </a>
               <div class="caption">
                 <h4><strong>'.$row["title"].'</strong></h4>
                 <p>'.ucfirst($row["category"]).'</p>
                 <p>
-                <a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
-                <a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
+                <form method="get">
+                  <button type="submit" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</button> 
+                  <button type="submit" class="btn btn-danger" role="button" name="delete">
+                    <span class="glyphicon glyphicon-remove-sign"></span> Delete
+                  </button>
+                </form>
                 </p>
               </div>
             </div>
           </div>';
+
+          // // if(isset($_GET['delete'])) {
+          // //   $sqlDelete = "DELETE FROM upload WHERE title='".$row['title']."' AND created_by='".$row['created_by']."'";
+          // //   mysql_query($sqlDelete);
+          // }
         }
       ?>
     </div>
