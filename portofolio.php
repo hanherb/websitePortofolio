@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include 'source.php' ?>
+	<?php 
+		include 'source.php';
+		include 'connection.php';
+	?>
 	<style>
 	body{
 		background-color: #EAEAEA;
@@ -26,7 +29,7 @@
 	<?php include "nav.php"; ?>
 	
 	
-	<div class="container-fluid" style="margin-top:80px;">
+	<div class="container-fluid" style="margin-top:80px; height: 720px; max-height: 100%:">
 
 			<!--Row Kiri-->
 			<div class="col-md-2" style="left: 35px;">
@@ -44,11 +47,8 @@
 			</div>
 		
 		<!--Row Kanan-->
-		<div id="container" class="col-md-10" style="left: 65px; height:100%;">
+		<div id="container" class="col-md-9" style="left: 65px; height:100%;">
 			<?php
-				mysql_connect("localhost","root","") or die(mysql_error());
-   				mysql_select_db("portofolio") or die(mysql_error());
-
 				$sql = "SELECT * FROM upload";
 				$result = mysql_query($sql);
 				if($result === FALSE) { 
@@ -57,7 +57,10 @@
 				while ($row = mysql_fetch_array($result)) {
 					echo '<div class="mix '. $row["category"] .' content-portofolio">
 						<div class="col-md-3 portofolio-img-template">
-							<a href="portofolio-project.php"><img src="'. $row["preview"] .'" id="imagePreview"></a>
+							<a href="portofolio-project.php?id=
+							'.$row["created_by"].'-'.preg_replace("/\s+/", "_", $row["title"]).'">
+								<img src="'. $row["preview"] .'" id="imagePreview">
+							</a>
 						</div>
 						<h4><strong>'. $row["title"] .'</strong></h4>
 						<p>by <font color="#de5a51">'. $row["created_by"] .'</font></p>

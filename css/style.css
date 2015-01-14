@@ -2,6 +2,7 @@ body {
 	/*background-color: #F1F1F1;*/
 	background-color: #fff;
 	margin: 0;
+	padding: 0;
 }
 
 .navbar-induk{
@@ -472,6 +473,8 @@ body {
 	background-color: #2A3744; 
 	height: auto; 
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 .page-footer_header {
 	margin-left : 30px;
@@ -531,11 +534,12 @@ body {
 .page-footer-bottom  {
 	background-color: #212A34;s
 	height: 100px;
-	width: 100%;
 	color: #fff;
 	font-family: Roboto, Source Sans Pro,Verdana, Geneva, sans-serif;
 	font-weight: normal;
 	height: 65px;
+	margin: 0;
+	padding: 0;
 }
 
 .page-footer-bottom p { 
@@ -553,4 +557,143 @@ body {
 	display: inline;
 	top: 25%;
 	margin-right: 30px;	
+}
+
+/********************************************page home****************************************************/
+
+
+.contentWhite
+{
+	background: white;
+	width: 100%;
+	height: 450px;
+	top: 0px;
+	margin-bottom: 10px;
+	
+}
+
+.first-title
+{
+	text-align: center;
+	color: #181818;
+	font-family: 'calibri';
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+
+.step 
+{
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.des-step 
+{
+	text-align: center;
+}
+
+.fillForm 
+{
+	margin-left: 85px;
+}
+
+.choosePorto
+{
+	margin-left: 100px;
+}
+
+.expandPorto
+{
+	margin-left: -10px;
+}
+
+.letStart
+{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.content
+{
+	background: #f26739;
+	width: 100%;
+	height: 550px;
+
+}
+
+.second-title
+{
+	text-align: center;
+	color: #fdfdfd;
+	font-family: 'berlin sans fb';
+	margin-top: 50px;
+}
+
+.himtiMember
+{
+	background: #f74d14;
+	height: 100px;
+}
+
+.memberCount
+{
+	color: white;
+	text-align: center;
+	font-family: 'Calibri';
+}
+
+.square
+{
+	background: #ffffff;
+	height: 200px;
+	margin-right: 5px;
+}
+
+.himti-member
+{
+	width: 100%;
+}
+
+.quote
+{
+	text-align: center;
+	background: white;
+	padding-bottom: 10px;
+	font-family: "berlin sans fb"
+}
+
+.contentBlue
+{
+	background: #21659b;
+	height: 350px;
+}
+
+.third-title
+{
+	color: white;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.developer-image
+{
+	width: 60%;
+	margin-left: 50px;
+}
+
+.dev-name
+{
+	color: white;
+	text-align: center;
+
+}
+
+.footer
+{
+	background: #292c32;
+	height: 50px;
+	text-align: center;
+	color: white;
+	padding-top: 15px;
 }

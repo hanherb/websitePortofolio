@@ -1,6 +1,5 @@
 <?php
-	mysql_connect("localhost","root","") or die(mysql_error());
-    mysql_select_db("portofolio") or die(mysql_error());
+	include "connection.php";
 
 	if(isset($_POST['submit'])) {
 		session_start();
