@@ -18,11 +18,6 @@
 <body>
 	<?php include "nav.php"; ?> 
 	<div class="container-fluid col-md-offset-2 col-md-9" style="margin-top: 100px;" >
-		<ul class=" upload-upload ">
-			<li><a class="col-md-2 text-center upload-activated" href="upload-upload.php">Upload</a></li>
-			<li><a class="col-md-3 text-center"href="manage-project.php">Manage Project</a><li>		
-			
-		</ul>
 	</div>
 
 	
