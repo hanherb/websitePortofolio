@@ -43,7 +43,7 @@
               else {
                 echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><p><a role="menuitem" tabindex="-1" href="user-page.php?id='.$_SESSION["nama"].'">
+                          <li><p><a role="menuitem" tabindex="-1" href="myprofile.php?id='.$_SESSION["nama"].'">
                           <span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
                           <li><p><a role="menuitem" tabindex="-1" href="edit-profile.php"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
                           <li class="divider"></li>
