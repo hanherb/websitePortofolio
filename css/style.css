@@ -290,6 +290,9 @@ body {
 	margin-top: -12px;
 	font-size: 12px;
 }
+.content-portofolio > p > a:hover {
+	text-decoration: underline;
+}
 
 .content-portofolio {
 	display: inline-block;

@@ -101,7 +101,7 @@
 			<p><a href="#"><?php echo $link ?></a></p>
 			<hr>
 			<h4>Created By</h4>
-			<p><?php echo $createdBy ?></p>
+			<p><a href="user-page.php?id=<?php echo $createdBy ?>"><?php echo $createdBy ?></a></p>
 			<hr>
 
 		</div>

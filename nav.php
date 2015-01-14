@@ -1,6 +1,6 @@
  <?php
     session_start();
-    if (!$_SESSION['nama']) {
+    if (empty($_SESSION['nama'])) {
       session_destroy();
     }
  ?>
@@ -81,13 +81,16 @@
           </div>
         </div>
         <!--End Popup-->
-
-         <div class="input-group col-md-3" style="left:20px;">
-           <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><img class="navbar-search-box-icon" src="images/search_icon.png"></button>
-          </span>
-       </div>
+        <form method="get" action="search-result.php">
+          <div class="input-group col-md-3" style="left:20px;">
+            <input type="text" name="search" class="form-control" placeholder="Search portofolio...">       
+            <span class="input-group-btn">
+              <button name"submit_search" class="btn btn-default" type="submit">
+                <img class="navbar-search-box-icon" src="images/search_icon.png">
+              </button>
+            </span>
+          </div>
+       </form>
       </div>        
      </div>  
  </nav>
