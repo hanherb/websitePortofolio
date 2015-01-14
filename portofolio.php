@@ -29,7 +29,7 @@
 	<?php include "nav.php"; ?>
 	
 	
-	<div class="container-fluid" style="margin-top:80px; height: 720px; max-height: 100%:">
+	<div class="container-fluid" style="margin-top:80px; height: 720px; max-height: 100%;">
 
 			<!--Row Kiri-->
 			<div class="col-md-2" style="left: 35px;">
@@ -63,7 +63,7 @@
 							</a>
 						</div>
 						<h4><strong>'. $row["title"] .'</strong></h4>
-						<p>by <font color="#de5a51">'. $row["created_by"] .'</font></p>
+						<p>by <a href="user-page.php?id='.$row["created_by"].'"><font color="#de5a51">'. $row["created_by"] .'</a></font></p>
 					  </div>';
 				}	
 			?>

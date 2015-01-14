@@ -1,6 +1,6 @@
  <?php
     session_start();
-    if (!$_SESSION['nama']) {
+    if (empty($_SESSION['nama'])) {
       session_destroy();
     }
  ?>
@@ -43,7 +43,8 @@
               else {
                 echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><p><a role="menuitem" tabindex="-1" href="user-page.php"><span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
+                          <li><p><a role="menuitem" tabindex="-1" href="user-page.php?id='.$_SESSION["nama"].'">
+                          <span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
                           <li><p><a role="menuitem" tabindex="-1" href="edit-profile.php"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
                           <li class="divider"></li>
                           <li><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
@@ -69,7 +70,7 @@
                   <br><br><br>
                   <label class="col-md-offset-1">Password</label> <br>
                   <input name="password" type="password" class="input-user col-md-offset-1 col-md-10" placeholder="Kata Sandi" id="password">
-                  <br><br><br
+                  <br><br><br>
                   <input type="submit" class="btn btn-primary col-md-offset-1 col-md-10" value="Sign In" name="sign_in"> <br><br><br>
                 </form>
               </div>
@@ -80,13 +81,16 @@
           </div>
         </div>
         <!--End Popup-->
-
-         <div class="input-group col-md-3" style="left:20px;">
-           <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><img class="navbar-search-box-icon" src="images/search_icon.png"></button>
-          </span>
-       </div>
+        <form method="get" action="search-result.php">
+          <div class="input-group col-md-3" style="left:20px;">
+            <input type="text" name="search" class="form-control" placeholder="Search portofolio...">       
+            <span class="input-group-btn">
+              <button name"submit_search" class="btn btn-default" type="submit">
+                <img class="navbar-search-box-icon" src="images/search_icon.png">
+              </button>
+            </span>
+          </div>
+       </form>
       </div>        
      </div>  
  </nav>
