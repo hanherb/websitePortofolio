@@ -19,7 +19,7 @@
               $attr = '<a data-toggle="modal" data-target="#myModal">Upload</a>';
             }
             else {
-              $attr = '<a href="upload-upload.php">Upload</a>';
+              $attr = '<a href="upload.php">Upload</a>';
             }
           ?>
           <li><?php echo $attr; ?></li>
