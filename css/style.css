@@ -134,7 +134,8 @@ body {
 }
 
 .signup-page hr,
-.editprofile-page hr {
+.editprofile-page hr,
+.upload-page hr {
     border-style: inset;
     border-width: 1px;
 }
@@ -286,28 +287,50 @@ body {
 	width: 950px;
 	margin-left: -1x;
 }
-/********************************************Page Upload-Upload********************************************/
-.upload-upload-text {
-	border-radius: 0px;
+/********************************************Page Upload********************************************/
+.upload-page {
+	margin-top: 2%;
 }
 
-.upload-upload-form-outline {
-/*    border-style: dashed;
-    border-width: 3px;
-    border-color: #505961;*/
-    width: 880px;
-    padding-top: 15px;
-    /*background-color: #c4c4c4;*/
-}
-.upload-upload-form{
-	top: -20px;
+.upload-left,
+.upload-right 	{
+	margin-top: 1%;
+	padding: 2%;
+	background-color: #fff;
 	box-shadow: 0px 1px 3px #888;
 }
-.upload-upload-content hr {
-	padding-top: 3px;
-	border-width: 5px; 
-	border-color: #505961; 
-	width: 880px;
+
+.upload-top h2 {
+	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
+}
+
+.upload-left {
+	margin-left: 4%;
+}
+
+.upload-page button {
+	margin-top: 2%;
+	background-color: #F05521;
+	color: #fff;
+	box-shadow: 1px 2px 1px #888888;
+}
+
+.upload-right {
+	margin-left: 2%;
+	height: 340px;
+}
+
+.upload-right-upload-photo {
+	padding-bottom: 10%;
+}
+.upload-right-upload-photo img {
+	width: 71px;
+	height:71px;
+}
+
+.upload-right-upload-photo input {
+	margin-top: -13%;
+	padding-left: 2%;
 }
 
 /********************************************Page Portofolio********************************************/
