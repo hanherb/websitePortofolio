@@ -43,13 +43,15 @@
 		$category = strtoupper($row['category']);
 		$link = $row['link'];
 		$preview = '"'.$row['preview'].'"';
+		$preview2 = '"'.$row['preview2'].'"';
+		$preview3 = '"'.$row['preview3'].'"';
 	}
 ?>
 
 <body>
 	<?php include "nav.php"; ?>
 
-	<div class="col-md-offset-1 container-fluid portofolio-project" style="margin-top:80px;">
+	<div class="col-md-offset-1 container-fluid portofolio-project" style="margin-top:80px; height: 600px">
 
 		<!--Row Kiri-->
 		<div class="portofolio-project-title-link col-md-12">
@@ -69,24 +71,12 @@
 			     <div class="carousel-inner" role="listbox">
 				        <div class="item active">
 				          <img src=<?php echo $preview ?> data-holder-rendered="true" style="width: 600px; height: 333px;">
-				          <div class="carousel-caption">
-				            <h3>First slide label</h3>
-				            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-				          </div>
 				        </div>
 				        <div class="item">
-				          <img src="images/2-b.png" data-holder-rendered="true" class="slide-image" style="width: 600px; height: 333px;">
-				          <div class="carousel-caption">
-				            <h3>Second slide label</h3>
-				            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				          </div>
+				          <img src=<?php echo $preview2 ?> data-holder-rendered="true" class="slide-image" style="width: 600px; height: 333px;">
 				        </div>
 				        <div class="item">
-				          <img src="images/2-c.png" data-holder-rendered="true" class="slide-image" style="width: 600px; height: 333px;">
-				          <div class="carousel-caption">
-				            <h3>Third slide label</h3>
-				            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-				          </div>
+				          <img src=<?php echo $preview3 ?> data-holder-rendered="true" class="slide-image" style="width: 600px; height: 333px;">
 				        </div>
 			      </div>
 			      
