@@ -35,6 +35,7 @@
 			$password = ($row['password']);
 			$fullname = $row['fullname'];
 			$year = $row['year'];
+			$avatar = $row['avatar'];
 		}
 	?>
 
@@ -106,7 +107,7 @@
 			    <label class="col-sm-5 control-label text-right">Profile Picture</label>
 			    <input type="file" id="avatarUpload" name="avatarUpload" class="fileUpload-avatar col-md-offset-6">
 			    <div class="upload-avatar-template">
-					<img src="images/avatar-upload.png" id="avatarPreview">
+					<img src=<?php echo '"'.$avatar.'"' ?> id="avatarPreview">
 				</div>
 			</div>
 		</div> 	
