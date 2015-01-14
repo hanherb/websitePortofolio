@@ -14,7 +14,22 @@
           <img src="images/avatar-upload.png">
         </div>
         <h2 class="col-xs-offset-2">Username</h2>
-        <a href="edit-profile.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Block User</a>
+        <?php
+          include "connection.php";
+          
+          $url = $_SERVER['REQUEST_URI'];
+          $userpage = substr($url, strpos($url, "=") + 1);
+
+          if($_SESSION['nama'] == "admin") {
+            echo '<form method="post">
+                    <button type="submit" class="btn btn-danger" name="block"><span class="glyphicon glyphicon-remove-sign"></span> Block User</button>
+                  </form>';
+          }
+          if(isset($_POST['block'])) {
+            $sqlBlock = "UPDATE user SET block = '1' WHERE username = '$userpage'";
+            mysql_query($sqlBlock);
+          }
+        ?>
       </div>
     
       <div class="col-md-12 myprofile-about">

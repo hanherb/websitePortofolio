@@ -63,7 +63,7 @@
 							</a>
 						</div>
 						<h4><strong>'. $row["title"] .'</strong></h4>
-						<p>by <a href="user-page.php?id='.$row["created_by"].'"><font color="#de5a51">'. $row["created_by"] .'</a></font></p>
+						<p>by <a href="myprofile.php?id='.$row["created_by"].'"><font color="#de5a51">'. $row["created_by"] .'</a></font></p>
 					  </div>';
 				}	
 			?>

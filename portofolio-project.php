@@ -2,6 +2,7 @@
 <html>
 <head>
 	<?php 
+		ob_start();
 		include 'source.php';
 		include 'connection.php';
 	?>
@@ -93,10 +94,32 @@
 
 		<!--Row Kanan-->
 		<div class="col-md-4 portofolio-project-right">
-			<div class="col-md-offset-5 col-md-7 text-right">
-				<a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
-            	<a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
-			</div>
+			<?php
+				if(session_status() != PHP_SESSION_NONE) {
+					if($_SESSION['nama'] == "admin") {
+						echo '<div class="col-md-offset-5 col-md-7 text-right">
+								<form method="post">
+				            		<button type="submit" class="btn btn-danger" role="button" name="delete"><span class="glyphicon glyphicon-remove-sign"></span> Delete</button>
+							 	</form>
+							  </div>';
+					}
+					else {
+						echo '<div class="col-md-offset-5 col-md-7 text-right">
+								<a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+					            <form method="post">	
+					            	<button type="submit" class="btn btn-danger" role="button" name="delete"><span class="glyphicon glyphicon-remove-sign"></span> Delete</button>
+							 	</form>
+							  </div>';
+					}
+				}
+
+				if(isset($_POST['delete'])) {
+					$sqlDelete = "DELETE FROM upload WHERE title ='$title' AND created_by ='$createdBy'";
+					mysql_query($sqlDelete);
+					header('Location: portofolio.php');
+					exit();
+				}
+			?>
 			<hr>
 			<h4>Description</h4>
 			<p><?php echo $description ?></p>
@@ -105,7 +128,7 @@
 			<p><a href="#"><?php echo $link ?></a></p>
 			<hr>
 			<h4>Created By</h4>
-			<p><a href="user-page.php?id=<?php echo $createdBy ?>"><?php echo $createdBy ?></a></p>
+			<p><a href="myprofile.php?id=<?php echo $createdBy ?>"><?php echo $createdBy ?></a></p>
 			<hr>
 
 		</div>
