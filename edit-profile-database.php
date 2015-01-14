@@ -33,18 +33,24 @@
 		$target_file = $target_dir . basename($_FILES["avatarUpload"]["name"]);
 		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-		if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-		&& $imageFileType != "gif" ) {
+		if($_FILES["avatarUpload"]["name"]) {
+			if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+			&& $imageFileType != "gif" ) {
 
-		    echo "<script type='text/javascript'> 
-		    		alert('File format is not JPG/JPEG/PNG/GIF.');
-		    	  </script>";
-		   	$avatar = "images/avatar-upload.png";
+			    echo "<script type='text/javascript'> 
+			    		alert('File format is not JPG/JPEG/PNG/GIF.');
+			    	  </script>";
+			   	$avatar = "images/avatar-upload.png";
+			}
+
+			else {
+				move_uploaded_file($_FILES["avatarUpload"]["tmp_name"], $target_file);
+			    $avatar = $target_dir . basename($_FILES["avatarUpload"]["name"]);	
+			}
 		}
 
 		else {
-			move_uploaded_file($_FILES["avatarUpload"]["tmp_name"], $target_file);
-		    $avatar = $target_dir . basename($_FILES["avatarUpload"]["name"]);	
+			$avatar = "images/avatar-upload.png";
 		}
 	    // Avatar End
 

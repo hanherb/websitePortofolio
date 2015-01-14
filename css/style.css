@@ -450,7 +450,11 @@ body {
 }
 
 .portofolio-project-right p {
-	font-size: 12	px;
+	font-size: 12px;
+}
+
+.portofolio-project-right a {
+	margin-top: -20%;
 }
 
 /********************************************page home****************************************************/

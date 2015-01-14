@@ -14,12 +14,12 @@
           <img src="images/avatar-upload.png">
         </div>
         <h2 class="col-xs-offset-2">Username</h2>
-        <a href="edit-profile.php" class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span> Edit Profile</a>
+        <a href="edit-profile.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove-sign"></span> Block User</a>
       </div>
     
       <div class="col-md-12 myprofile-about">
         <p><span class="glyphicon glyphicon-user"></span> Student ID Number 113103003</p>
-        <p><span class="glyphicon glyphicon-asterisk"></span> Year 2013</p>        
+        <p><span class="glyphicon glyphicon-flag"></span> Year 2013</p>        
       </div>
     
       <!-- Portfolio Content -->

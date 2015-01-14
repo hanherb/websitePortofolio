@@ -93,6 +93,10 @@
 
 		<!--Row Kanan-->
 		<div class="col-md-4 portofolio-project-right">
+			<div class="col-md-offset-5 col-md-7 text-right">
+				<a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            	<a href="#" class="btn btn-danger" role="button"><span class="glyphicon glyphicon-remove-sign"></span> Delete</a>
+			</div>
 			<hr>
 			<h4>Description</h4>
 			<p><?php echo $description ?></p>
