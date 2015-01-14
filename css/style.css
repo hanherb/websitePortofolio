@@ -244,16 +244,16 @@ body {
 .myprofile-img-template {
 	margin-top: 4%;
 	margin-right: 4%;
-	width: 210px;
-	height: 230px; 
+	width: 160px;
+	height: 160px; 
 	background-color: #fff;
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 3px #888;
 }
 
 .myprofile-img-template img {
-	margin-top: -2%; 	
-	margin-left: -11%;
+	width: 100%;
+	height: 100%;
 }
 
 .myprofile-img-template p {

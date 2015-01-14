@@ -9,16 +9,33 @@
     	$num = mysql_num_rows($database_check);
     	$database_check2 = mysql_query("SELECT * FROM user WHERE email = '" . $username . "' AND password = '" . $password . "'") or die("Couldn't query the user-database.");
     	$num2 = mysql_num_rows($database_check2);
+        $sql = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
+        $result = mysql_query($sql);
+        if($result === FALSE) { 
+            die(mysql_error());
+        }
+
+        while ($row = mysql_fetch_array($result)) {
+            $block = $row['block'];
+        }
 
     	if(($num == 1) || ($num2 == 1)) {
     		if($num2 == 1) {
     			$username = mysql_query("SELECT username FROM user WHERE email = '" . $username . "'");
     		}
-    		session_start();
-    		$_SESSION['nama'] = $username;
-    		$_SESSION['password'] = $password;
 
-            header('Location: signin-success.php');
+            if($block != 0) {
+                echo '<script type="text/javascript">
+                        alert("Account anda telah di block");
+                      </script>';
+            }
+            else {
+        		session_start();
+        		$_SESSION['nama'] = $username;
+        		$_SESSION['password'] = $password;
+
+                header('Location: signin-success.php');
+            }
     	}
 
     	else {

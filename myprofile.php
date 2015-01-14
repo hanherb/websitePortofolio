@@ -5,20 +5,36 @@
 </head>
 
 <body>
-  <?php include 'nav.php' ?>
+  <?php
+    include 'nav.php';
+    include "connection.php";
+
+    $url = $_SERVER['REQUEST_URI'];
+    $userpage = substr($url, strpos($url, "=") + 1);
+    
+    $sql = "SELECT * FROM user WHERE username = '$userpage'";
+    $result = mysql_query($sql);
+    if($result === FALSE) { 
+        die(mysql_error());
+    }
+
+    while ($row = mysql_fetch_array($result)) {
+      $username = $row['username'];
+      $nim = $row['nim'];
+      $fullname = $row['fullname'];
+      $year = $row['year'];
+      $avatar = $row['avatar'];
+    }
+  ?>
   <div class="col-md-offset-1 col-md-10 myprofile-page">
 
       <div class="myprofile-heading ">
         <img src="images/home-3.jpg"> <!-- cover  -->
         <div class="myprofile-avatar col-md-2">
-          <img src="images/avatar-upload.png">
+          <img src=<?php echo '"'.$avatar.'"' ?>>
         </div>
-        <h2 class="col-xs-offset-2">Username</h2>
+        <h2 class="col-xs-offset-2"><?php echo $username.' <small>('.$fullname.')</small>' ?></h2>
         <?php
-          include "connection.php";
-          
-          $url = $_SERVER['REQUEST_URI'];
-          $userpage = substr($url, strpos($url, "=") + 1);
 
           if($_SESSION['nama'] == "admin") {
             echo '<form method="post">
@@ -33,61 +49,30 @@
       </div>
     
       <div class="col-md-12 myprofile-about">
-        <p><span class="glyphicon glyphicon-user"></span> Student ID Number 113103003</p>
-        <p><span class="glyphicon glyphicon-flag"></span> Year 2013</p>        
+        <p><span class="glyphicon glyphicon-user"></span> Student ID Number <?php echo $nim ?></p>
+        <p><span class="glyphicon glyphicon-flag"></span> Year <?php echo $year ?></p>        
       </div>
     
       <!-- Portfolio Content -->
       <div class="row col-md-12 myprofile-portofolio-content">
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-        
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
+        <?php
+          $sql = "SELECT * FROM upload WHERE created_by = '$userpage'";
+          $result = mysql_query($sql);
+          if($result === FALSE) { 
+              die(mysql_error());
+          }
 
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-        
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-
-        <div class="col-md-3 myprofile-img-template">
-            <img src="images/3-myprofile.png">
-            <h4><strong>Project's Name</strong></h4>
-            <p>Category</p>
-        </div>
-
+          while ($row = mysql_fetch_array($result)) {
+            echo '<div class="col-md-3 myprofile-img-template">
+                    <a href="portofolio-project.php?id='.$userpage.'-'.preg_replace("/\s+/", "_", $row["title"]).'">
+                      <img src="'.$row["preview"].'">
+                    </a>
+                    <h4><strong>'.$row["title"].'</strong></h4>
+                    <p>'.ucfirst($row["category"]).'</p>
+                  </div>';
+          }
+        ?>
       </div>
-
   </div>
     
 
