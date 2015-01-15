@@ -77,7 +77,7 @@
 
 			</div>
 
-			<button type="submit" class="btn col-md-offset-4 col-md-4" name="submit"> Submit Project </button>
+			<button type="submit" class="btn col-md-offset-4 col-md-4" name="submit"><span class="glyphicon glyphicon-cloud-upload"></span> Upload Project </button>
 		</form>
 		<hr class="col-md-offset-1 col-md-10">	
 	</div>

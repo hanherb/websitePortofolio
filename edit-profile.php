@@ -113,7 +113,7 @@
 		</div> 	
  	
 		<div class="form-group editprofile-button">
-      		<br><button type="submit" class="btn col-md-offset-3 col-md-6" name="submit_edit"> Save Information </button>
+      		<br><button type="submit" class="btn col-md-offset-3 col-md-6" name="submit_edit"><span class="glyphicon glyphicon-floppy-disk"></span> Save Information </button>
   		</div>
   	</form>
 

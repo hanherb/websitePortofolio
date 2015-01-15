@@ -19,7 +19,7 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox" style="width:100%">
 		    <div class="item active">
-		      <img src="images/home-1.jpg" >
+		      <img src="images/home-slideshow.jpg" >
 		      <div class="carousel-caption">
 		        ...
 		      </div>
@@ -39,100 +39,9 @@
 		    ...
 		  </div>
 
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
-
 		<!-- Content -->
 
-		<div class="contentWhite col-md-12">
-			<div class="col-md-12">
-				<h1 class="first-title">
-					How to Make my Portofolio?
-				</h1>
-			</div>
-			<div class="col-md-12">
-				<div class="col-md-offset-1 col-md-3">
-					<img src="images/step-1.png" class="step">
-					<div class="des-step fillForm">
-						<h3 class="des-step">
-							Fill in the Form
-						</h3>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<img src="images/step-2.png" class="step">
-					<div class="des-step choosePorto">
-						<h3>
-							Choose the Portofolio Section
-						</h3>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<img src="images/step-3.png" class="step">
-					<div class="des-step expandPorto">
-						<h3>
-							Expand your Portofolio
-						</h3>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="letStart col-md-12">
-				<div class="col-md-offset-4 col-md-4 col-md-offset-4">
-					<h2>
-						Lets Start Now! 
-					</h2>
-				</div>	
-			</div>
-		</div>
-		<div class="content col-md-12" >			
-			<div class="col-md-offset-2 col-md-8 col-md-offset-2">
-				<h1 class="second-title">
-					We Connect all of HIMTI Member 
-				</h1>
-			</div>
-			<div class="col-md-12">
-				<div class="himtiMember col-md-offset-2 col-md-8 col-md-offset-2">
-					<div class="col-md-12">
-						<div class="col-md-3">
-							<h2 class="memberCount">12 Person</h2>
-							<h5 class="memberCount">Member of 2010</h5>
-						</div>
-						<div class="col-md-3">
-							<h2 class="memberCount">13 Person</h2>
-							<h5 class="memberCount">Member of 2011</h5>
-						</div>
-						<div class="col-md-3">
-							<h2 class="memberCount">11 Person</h2>
-							<h5 class="memberCount">Member of 2012</h5>
-						</div>
-						<div>
-							<h2 class="memberCount">18 Person</h2>
-							<h5 class="memberCount">Member of 2013 & 2014</h5>
-						</div>
-					</div>
-				</div>
-				<br><br><br><br><br><br>
-				<div class="col-md-offset-2 col-md-8 col-md-offset-2">
-					<div class="col-md-6">
-						<img src="images/himti-member.jpg" class="himti-member">
-						<p class="quote">Talk less do more!</p>
-					</div>
-					<div class="col-md-6">
-						<img src="images/himtimember.jpg" class="himti-member">
-						<p class="quote">Do it now!</p>
-					</div>
-				</div>
-			</div>
-		</div>
+
 		<div class="contentBlue col-md-12">
 			<div class="col-md-offset-2 col-md-8 col-md-offset-2">
 				<h1 class="third-title">

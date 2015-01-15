@@ -29,7 +29,7 @@
   <div class="col-md-offset-1 col-md-10 myprofile-page">
 
       <div class="myprofile-heading ">
-        <img src="images/home-3.jpg"> <!-- cover  -->
+        <img src="images/cover.png"> <!-- cover  -->
         <div class="myprofile-avatar col-md-2">
           <a href=<?php echo '"'.$avatar.'"' ?> target="_blank">
             <img src=<?php echo '"'.$avatar.'"' ?>>
