@@ -10,6 +10,7 @@
     	$fullname = $_POST['signup_fullname'];
     	$nim = $_POST['signup_nim'];
     	$year = $_POST['signup_year'];
+        $avatar = "images/avatar-upload.png";
 
         $username_check = mysql_query("SELECT * FROM user WHERE username = '" . $username . "'")
         or die("Couldn't query the user-database.");
@@ -57,8 +58,8 @@
         }
 
     	else {
-    		$sql = "INSERT INTO `portofolio`.`user` (`id_number`, `nim`, `username`, `email`, `password`, `fullname`, `year`)
-			VALUES ('', '$nim', '$username', '$email', '$password', '$fullname', '$year')";
+    		$sql = "INSERT INTO `portofolio`.`user` (`id_number`, `nim`, `username`, `email`, `password`, `fullname`, `year`, `avatar`)
+			VALUES ('', '$nim', '$username', '$email', '$password', '$fullname', '$year', '$avatar')";
 			mysql_query($sql);
     	}
     }
