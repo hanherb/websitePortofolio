@@ -40,23 +40,23 @@
 			else {
 				
 				// Check if file already exists
-				if($_FILES['fileUpload']["name"]) {
-					if (file_exists($target_file)) {
-					    $uploadOk = 0;
-					}
-				}
+				// if($_FILES['fileUpload']["name"]) {
+				// 	if (file_exists($target_file)) {
+				// 	    $uploadOk = 0;
+				// 	}
+				// }
 
-				if($_FILES['fileUpload2']["name"]) {
-					if (file_exists($target_file2)) {
-						$uploadOk = 0;
-					}
-				}
+				// if($_FILES['fileUpload2']["name"]) {
+				// 	if (file_exists($target_file2)) {
+				// 		$uploadOk = 0;
+				// 	}
+				// }
 
-				if($_FILES['fileUpload3']["name"]) {
-					if (file_exists($target_file3)) {
-						$uploadOk = 0;
-					}
-				}
+				// if($_FILES['fileUpload3']["name"]) {
+				// 	if (file_exists($target_file3)) {
+				// 		$uploadOk = 0;
+				// 	}
+				// }
 
 				if($_FILES['fileUpload']["name"] && $_FILES['fileUpload2']["name"]) {
 					if($_FILES['fileUpload']["name"] == $_FILES['fileUpload2']["name"]) {
