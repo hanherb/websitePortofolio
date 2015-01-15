@@ -1,7 +1,7 @@
 <div class="page-footer row container col-md-12 ">
 	<div class="page-footer_header">
 	  <img src="images/logo2.png">
-	  <span class="logo-text"> Test ya. Gatau Mau Nulis Apa </span>
+	  <span class="logo-text"> Organized by HIMTI Paramadina, Jakarta </span>
 	  <hr class="col-md-12">
 	</div>
 	

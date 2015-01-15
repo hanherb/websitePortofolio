@@ -2,6 +2,11 @@
 <html>
 	<head>
 		<?php include 'source.php'; ?>
+	<style>
+	body{
+		background-color: #fff;
+	}
+	</style>
 
 	</head>
 
@@ -17,21 +22,21 @@
 		  </ol>
 
 		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox" style="width:100%">
-		    <div class="item active">
-		      <img src="images/home-slideshow.jpg" >
+		  <div class="carousel-inner home-carousel-inner" role="listbox" style="width:100%">
+		    <div class="item active home-slideshow">
+		      <img src="images/home-slideshow.png" >
 		      <div class="carousel-caption">
 		        ...
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src="images/home-2.jpg" alt="...">
+		      <img src="images/home-slideshow2.png" alt="...">
 		      <div class="carousel-caption">
 		        ...
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src="images/home-4.jpg" alt="...">
+		      <img src="images/home-slideshow3.png" alt="...">
 		      <div class="carousel-caption">
 		        ...
 		      </div>
@@ -40,7 +45,13 @@
 		  </div>
 
 		<!-- Content -->
-
+		<div class="contentWhite col-md-12">
+		<img class="col-md-offset-2" src="images/about.png">
+		<p class="col-md-offset-4 col-md-6"> 
+		HIMTI Portofolio dibuat untuk mewadahi anggota HIMTI Paramadina 
+		dalam mengumpulkan, menyimpan dan mem-publish serta bentuk apresiasi 
+		terhadap karya-karya atau project-project yang dibuat selama masa perkuliahan.</p>
+		</div>
 
 		<div class="contentBlue col-md-12">
 			<div class="col-md-offset-2 col-md-8 col-md-offset-2">

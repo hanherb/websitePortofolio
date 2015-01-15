@@ -34,7 +34,7 @@
 			<!--Row Kiri-->
 			<div class="col-md-2" style="left: 35px;">
 				<div class="col-md-12 text-right">
-					<img src="images/categories22.png" style="top:20px; margin-right=45px; padding-bottom:25px; z-index:-1;"class="col-md-offset-4 col-md-8">
+					<img src="images/categories21.png" style="top:20px; margin-right=45px; padding-bottom:25px; z-index:-1;"class="col-md-offset-4 col-md-8">
 					<div class="a-categories">
 						<a class="filter" href="#" data-filter="all">All</a><br>
 						<a class="filter" href="#" data-filter=".programming">Programming</a><br>
