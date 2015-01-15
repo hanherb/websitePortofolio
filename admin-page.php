@@ -5,7 +5,10 @@
 </head>
 
 <body>
-  <?php include 'nav.php' ?>
+  <?php 
+    include 'nav.php'; 
+    include 'connection.php';
+  ?>
   
   <div class="container col-md-offset-1 col-md-10 admin-page ">
     <h2 class="text-center"> Admin Page </h2>
@@ -18,20 +21,29 @@
             <tr>
               <th>No</th>
               <th>Username</th>
+              <th>Full Name</th>
               <th>Student ID Number</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>test</td>
-              <td>test</td>
-              <td>test</td>           
-            </tr>
-            <tr>
-              <td>test</td>
-              <td>test</td>
-              <td>test</td>           
-            </tr>
+            <?php
+              $no = 1;
+              $sql = "SELECT * FROM user";
+              $result = mysql_query($sql);
+              if($result === FALSE) { 
+                  die(mysql_error());
+              }
+
+              while ($row = mysql_fetch_array($result)) {
+                echo '<tr>
+                        <td>'.$no.'</td>
+                        <td><a href ="myprofile.php?id='.$row["username"].'">'.$row["username"].'</a></td>
+                        <td>'.$row["fullname"].'</td>
+                        <td>'.$row["nim"].'</td>           
+                      </tr>';
+                $no = $no + 1;
+              }
+            ?>
           </tbody>
         </table>
       </div>

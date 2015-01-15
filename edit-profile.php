@@ -88,7 +88,7 @@
 
 		  		<div class="form-group">
 		    		<label class="col-md-offset-1 col-sm-3 control-label text-right">Year</label>
-		    		<div class="col-sm-2">
+		    		<div class="col-sm-3">
 		     			<select class="form-control" name="signup_year" placeholder="Year">
 		     				<option value="2011" <?php if ($year == "2011") {echo 'selected="selected"';}?>>2011</option>
 		     				<option value="2012" <?php if ($year == "2012") {echo 'selected="selected"';}?>>2012</option>

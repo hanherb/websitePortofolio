@@ -130,7 +130,17 @@ body {
 	padding-bottom: 0;
 }
 
-.admin-page h2, a {
+.admin-page td a {
+	float: left;
+	color: white;
+}
+
+.admin-page tr:hover a {
+	color: gray;
+}
+
+.admin-page h2,
+.admin-page a {
 	font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
 }
 .admin-page-table table {
@@ -182,7 +192,8 @@ body {
 	margin-top: 55px;
 }
 .upload-avatar-template {
-	margin-left: 14%;
+	margin-top: -4%;
+	margin-left: 16%;
 	background-color: #fff;
 	width: 115px;
 	height: 115px;
@@ -268,8 +279,8 @@ body {
 .myprofile-img-template {
 	margin-top: 4%;
 	margin-right: 4%;
-	width: 160px;
-	height: 160px; 
+	width: 210px;
+	height: 230px; 
 	background-color: #fff;
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 3px #888;
@@ -281,7 +292,7 @@ body {
 }
 
 .myprofile-img-template p {
-	margin-top: -4%;
+	margin-top: -6%;
 }
 
 /********************************************Page Manage-Project********************************************/
@@ -468,7 +479,7 @@ body {
 }
 
 .portofolio-project-right p {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .portofolio-project-right a {
