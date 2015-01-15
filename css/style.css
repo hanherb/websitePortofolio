@@ -403,7 +403,7 @@ body {
 	padding-right: 20px;
 	margin-bottom: 20px;
 }
-#container mix {
+#container .mix {
 	text-align: left;
 	display: none;
 }

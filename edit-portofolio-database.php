@@ -144,8 +144,7 @@
 
 			if($uploadOk != 0) {
 
-				$sql = "UPDATE upload SET title = '$title', description = '$description', category = '$category', preview = '$preview',
-					preview2 = '$preview2', preview3 = '$preview3' WHERE created_by = '$urlCreatedBy' AND title = '$urlTitle'";
+				$sql = "UPDATE upload SET title = '$title', description = '$description', category = '$category', link = '$link', preview = '$preview', preview2 = '$preview2', preview3 = '$preview3' WHERE created_by = '$urlCreatedBy' AND title = '$urlTitle'";
 				mysql_query($sql);
 			}
 		}
