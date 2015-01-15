@@ -41,14 +41,28 @@
                 echo '<a class="navbar-font" data-toggle="modal" data-target="#myModal" id="navbar1">Sign In</a>';
               }
               else {
-                echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </a>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li><p><a role="menuitem" tabindex="-1" href="myprofile.php?id='.$_SESSION["nama"].'">
-                          <span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
-                          <li><p><a role="menuitem" tabindex="-1" href="edit-profile.php"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
-                          <li class="divider"></li>
-                          <li><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
-                        </ul>';
+                if($_SESSION['nama'] != "admin") {
+                  echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </a>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li><p><a role="menuitem" tabindex="-1" href="myprofile.php?id='.$_SESSION["nama"].'">
+                            <span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
+                            <li><p><a role="menuitem" tabindex="-1" href="edit-profile.php"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
+                            <li class="divider"></li>
+                            <li><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+                          </ul>';
+                  }
+                else {
+                  echo '<a class="navbar-font dropdown-toggle" id="menu1" data-toggle="dropdown"> '. $user .' </a>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li><p><a role="menuitem" tabindex="-1" href="admin-page.php">
+                            <span class="glyphicon glyphicon-user"></span> Admin Page</a></p></li>
+                            <li><p><a role="menuitem" tabindex="-1" href="myprofile.php?id='.$_SESSION["nama"].'">
+                            <span class="glyphicon glyphicon-user"></span> My Profile</a></p></li>
+                            <li><p><a role="menuitem" tabindex="-1" href="edit-profile.php"><span class="glyphicon glyphicon-wrench"></span> Edit Profile</a></p></li>
+                            <li class="divider"></li>
+                            <li><a role="menuitem" tabindex="-1" href="signout.php" name="logout"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+                          </ul>';
+                }
               }
             ?> 
           </li> 

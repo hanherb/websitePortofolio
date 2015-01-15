@@ -35,13 +35,15 @@
               }
 
               while ($row = mysql_fetch_array($result)) {
-                echo '<tr>
-                        <td>'.$no.'</td>
-                        <td><a href ="myprofile.php?id='.$row["username"].'">'.$row["username"].'</a></td>
-                        <td>'.$row["fullname"].'</td>
-                        <td>'.$row["nim"].'</td>           
-                      </tr>';
-                $no = $no + 1;
+                if($row['username'] != "admin") {
+                  echo '<tr>
+                          <td>'.$no.'</td>
+                          <td><a href ="myprofile.php?id='.$row["username"].'">'.$row["username"].'</a></td>
+                          <td>'.$row["fullname"].'</td>
+                          <td>'.$row["nim"].'</td>           
+                        </tr>';
+                  $no = $no + 1;
+                }
               }
             ?>
           </tbody>

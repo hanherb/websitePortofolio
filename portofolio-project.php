@@ -106,7 +106,7 @@
 
 					else if($_SESSION['nama'] == $createdBy) {
 						echo '<div class="col-md-offset-5 col-md-7 text-right">
-								<a href="edit-portofolio" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
+								<a href="edit-portofolio.php?id='.$parsedUrl.'" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-edit"></span> Edit</a> 
 					            <form method="post">	
 					            	<button type="submit" class="btn btn-danger" role="button" name="delete"><span class="glyphicon glyphicon-remove-sign"></span> Delete</button>
 							 	</form>
