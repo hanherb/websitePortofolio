@@ -84,7 +84,7 @@
 				// Allow certain file formats
 				if($_FILES['fileUpload']["name"]) {
 					if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "PNG" && $imageFileType != "jpeg"
-					&& $imageFileType != "gif" ) {
+					&& $imageFileType != "gif" && $imageFileType != "JPEG" && $imageFileType != "JPG" && $imageFileType != "GIF" ) {
 
 					    $uploadOk = 0;
 					}
@@ -92,7 +92,7 @@
 
 				if($_FILES['fileUpload2']["name"]) {
 					if($imageFileType2 != "jpg" && $imageFileType2 != "png" && $imageFileType2 != "PNG" && $imageFileType2 != "jpeg"
-					&& $imageFileType2 != "gif" ) {
+					&& $imageFileType2 != "gif" && $imageFileType2 != "JPEG" && $imageFileType2 != "JPG" && $imageFileType2 != "GIF" ) {
 
 					    $uploadOk = 0;
 					}
@@ -100,7 +100,7 @@
 
 				if($_FILES['fileUpload3']["name"]) {
 					if($imageFileType3 != "jpg" && $imageFileType3 != "png" && $imageFileType3 != "PNG" && $imageFileType3 != "jpeg"
-					&& $imageFileType3 != "gif" ) {
+					&& $imageFileType3 != "gif" && $imageFileType3 != "JPEG" && $imageFileType3 != "JPG" && $imageFileType3 != "GIF" ) {
 
 					    $uploadOk = 0;
 					}
